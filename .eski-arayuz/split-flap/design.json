@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-24T00:00:00Z",
+  "title": "Design System: PC Benchmark",
+  "extensions": {
+    "colorMeta": {
+      "amber": { "role": "primary", "displayName": "Pano Kehribarı", "canonical": "#ffb000", "tonalRamp": ["oklch(25% 0.06 78)", "oklch(36% 0.09 78)", "oklch(47% 0.12 78)", "oklch(58% 0.15 78)", "oklch(69% 0.17 78)", "oklch(80.5% 0.17 78)", "oklch(88% 0.12 82)", "oklch(95% 0.05 85)"] },
+      "amber-hot": { "role": "primary", "displayName": "Sıcak Kehribar", "canonical": "#ffc233" },
+      "amber-ink": { "role": "primary", "displayName": "Kehribar Mürekkebi", "canonical": "#1a1200" },
+      "signal": { "role": "tertiary", "displayName": "Sinyal Kırmızısı", "canonical": "#ff5a4e", "tonalRamp": ["oklch(25% 0.08 28)", "oklch(35% 0.12 28)", "oklch(45% 0.16 28)", "oklch(55% 0.19 28)", "oklch(66% 0.21 28)", "oklch(75% 0.16 28)", "oklch(85% 0.09 28)", "oklch(95% 0.03 28)"] },
+      "paint": { "role": "neutral", "displayName": "Beyaz Boya", "canonical": "#edece7" },
+      "paint-dim": { "role": "neutral", "displayName": "Soluk Boya", "canonical": "#a9aba6" },
+      "flap": { "role": "neutral", "displayName": "Flap Siyahı", "canonical": "#0c0d0f" },
+      "flap-top": { "role": "neutral", "displayName": "Üst Yaprak", "canonical": "#141518" },
+      "flap-edge": { "role": "neutral", "displayName": "Flap Kenarı", "canonical": "#2b2f34" },
+      "steel-950": { "role": "neutral", "displayName": "Pano Yüzü", "canonical": "#121416", "tonalRamp": ["#121416", "#181b1e", "#1e2124", "#25292d", "#343a40", "#4a5057", "#989fa6", "#c9cdd1"] },
+      "steel-900": { "role": "neutral", "displayName": "Çelik 900", "canonical": "#181b1e" },
+      "steel-850": { "role": "neutral", "displayName": "Çelik Tuş", "canonical": "#1e2124" },
+      "steel-800": { "role": "neutral", "displayName": "Pano Cetveli", "canonical": "#25292d" },
+      "steel-700": { "role": "neutral", "displayName": "Alan Kenarı", "canonical": "#343a40" },
+      "steel-600": { "role": "neutral", "displayName": "Pim ve Ayraç", "canonical": "#4a5057" },
+      "steel-400": { "role": "neutral", "displayName": "Placeholder Çeliği", "canonical": "#989fa6" },
+      "steel-300": { "role": "neutral", "displayName": "Etiket Çeliği", "canonical": "#aab0b6" },
+      "steel-200": { "role": "neutral", "displayName": "Açık Çelik", "canonical": "#c9cdd1" },
+      "steel-field": { "role": "neutral", "displayName": "Çelik Zemin", "canonical": "#303336" },
+      "steel-bezel": { "role": "neutral", "displayName": "Çelik Bezel", "canonical": "#56595e" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Yalnızca ana sayfa başlığı; FlapWords + pimli hücreler. 2.25rem, ≥420px 2.75rem, ≥640px 4rem, ≥1280px 4.75rem." },
+      "headline": { "displayName": "Headline", "purpose": "PageTitle sayfa başlığı flap hücrelerinde; 1.75rem, ≥640px 2.5rem." },
+      "title": { "displayName": "Title", "purpose": "Pano başlık şeridi (.board-title), büyük harf." },
+      "data": { "displayName": "Data", "purpose": "Flap şeridi ve form alanı; tabular-nums." },
+      "body": { "displayName": "Body", "purpose": "Düz metin; Barlow Semi Condensed." },
+      "label": { "displayName": "Label", "purpose": "Alan/gösterge etiketleri, tablo başlıkları, veri damgası (.board-label), steel-300." }
+    },
+    "shadows": [
+      { "name": "board-recess", "value": "inset 0 0 0 1px #050506, inset 0 2px 3px rgb(0 0 0 / 0.55), 0 0 0 1px rgb(0 0 0 / 0.6), 0 1px 0 1px rgb(255 255 255 / 0.05)", "purpose": "Çelik bezel içine gömülü pano yüzü; yalnızca .board." },
+      { "name": "flap-leaf", "value": "inset 0 1px 0 rgb(255 255 255 / 0.05), inset 0 -1px 0 rgb(0 0 0 / 0.6)", "purpose": "Flap hücresinin yaprak kenarları." },
+      { "name": "strip-leaf", "value": "inset 0 1px 0 rgb(255 255 255 / 0.04), inset 0 -1px 0 rgb(0 0 0 / 0.55)", "purpose": "Flap şeridinin yaprak kenarları." },
+      { "name": "hinge", "value": "0 max(1px, 0.03em) max(1px, 0.05em) rgb(0 0 0 / 0.7)", "purpose": "Menteşe çizgisinin alt yaprağa düşen gölgesi." },
+      { "name": "strip-edge", "value": "inset 0 1px 0 rgb(255 255 255 / 0.06)", "purpose": "Çelik şeritlerin (başlık, alt bilgi, sabit çubuk) üst parıltısı." },
+      { "name": "lamp-halo", "value": "0 0 0 2px rgb(255 176 0 / 0.18)", "purpose": "Yanık kehribar lamba." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Tüm geçiş ve flap animasyonlarının eğrisi (--ease-out)." },
+      { "name": "control-transition", "value": "160ms", "purpose": "Düğme, alan, segment renk/kenar geçişi; basış 120ms translateY(1px)." },
+      { "name": "flap-step", "value": "55ms", "purpose": "Kaskadda bir hücrenin ara karakter adımı; konumlar arası gecikme 28ms, 2-4 ara karakter." },
+      { "name": "flap-fold", "value": "90ms", "purpose": "Tek karakter dönüşü: rotateX(-88deg) + brightness(1.6) → 0." },
+      { "name": "strip-fold", "value": "260ms", "purpose": "Şerit dönüşü: perspective(500px) rotateX(-70deg), --flip-delay ile satır satır kademeli." },
+      { "name": "matchup-rotate", "value": "6000ms", "purpose": "Ana sayfa canlı eşleşme panosu dönüş aralığı; hover/odakta ve reduced-motion'da durur." },
+      { "name": "reduced-motion", "value": "none", "purpose": "prefers-reduced-motion: reduce altında flap, şerit ve düğme hareketi kapalı; kaskad anında hedefe gider." }
+    ],
+    "breakpoints": [
+      { "name": "xs-title", "value": "400px" },
+      { "name": "xs-hero", "value": "420px" },
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" },
+      { "name": "container", "value": "1440px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Board",
+      "kind": "card",
+      "refersTo": "board",
+      "description": "Her bölümün kabı: 7px çelik bezel içinde gömülü siyah yüz, cetvelli başlık şeridi.",
+      "html": "<section class=\"ds-board\"><div class=\"ds-board-head\"><h2 class=\"ds-board-title\">GPU · ilk 10</h2><span class=\"ds-board-label\">Masaüstü · tahmini</span></div><div class=\"ds-board-body\"><p class=\"ds-board-note\">Endeks tahminidir: spesifikasyonlardan hesaplanır, benchmark değildir.</p></div></section>",
+      "css": ".ds-board { position: relative; border: 7px solid transparent; border-radius: 4px; background: linear-gradient(var(--color-steel-950, #121416), var(--color-steel-950, #121416)) padding-box, url('/steel.png') 0 0 / 256px 256px border-box; background-color: var(--color-steel-bezel, #56595e); background-blend-mode: normal, overlay; box-shadow: inset 0 0 0 1px #050506, inset 0 2px 3px rgb(0 0 0 / 0.55), 0 0 0 1px rgb(0 0 0 / 0.6), 0 1px 0 1px rgb(255 255 255 / 0.05); color: var(--color-paint, #edece7); } .ds-board-head { display: flex; align-items: baseline; gap: 1rem; min-height: 3rem; padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-steel-800, #25292d); box-sizing: border-box; } .ds-board-title { margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 1.0625rem; line-height: 1.25rem; letter-spacing: 0.16em; text-transform: uppercase; } .ds-board-label { font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 0.75rem; line-height: 1rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-steel-300, #aab0b6); } .ds-board-body { padding: 1rem; } .ds-board-note { margin: 0; font-family: 'Barlow Semi Condensed', 'Arial Narrow', sans-serif; font-size: 0.875rem; color: var(--color-steel-300, #aab0b6); }"
+    },
+    {
+      "name": "Flap Cells",
+      "kind": "custom",
+      "refersTo": "flap",
+      "description": "İmza: karakter başına mat siyah flap hücresi, ortada menteşe, büyük göstergede yan pimler.",
+      "html": "<span class=\"ds-flaps ds-pins\"><span class=\"ds-flap\">H</span><span class=\"ds-flap\">A</span><span class=\"ds-flap\">N</span><span class=\"ds-flap\">G</span><span class=\"ds-flap\">İ</span><span class=\"ds-flap ds-amber\">?</span></span>",
+      "css": ".ds-flaps { display: inline-flex; font-size: 3rem; } .ds-flap { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 0.78em; height: 1.12em; margin-right: 0.08em; border-radius: 0.07em; background: linear-gradient(to bottom, var(--color-flap-top, #141518) 0 50%, var(--color-flap, #0c0d0f) 50% 100%); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05), inset 0 -1px 0 rgb(0 0 0 / 0.6); color: var(--color-paint, #edece7); font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 500; line-height: 1; text-transform: uppercase; overflow: hidden; } .ds-flap:last-child { margin-right: 0; } .ds-flap::before { content: ''; position: absolute; inset-inline: 0; top: 50%; height: max(1px, 0.035em); transform: translateY(-50%); background: #000; box-shadow: 0 max(1px, 0.03em) max(1px, 0.05em) rgb(0 0 0 / 0.7); z-index: 2; } .ds-pins .ds-flap::after { content: ''; position: absolute; inset-inline: 0; top: 50%; height: 0.16em; transform: translateY(-50%); background: linear-gradient(#4a5057, #4a5057) left / 0.06em 100% no-repeat, linear-gradient(#4a5057, #4a5057) right / 0.06em 100% no-repeat; z-index: 3; } .ds-amber { color: var(--color-amber, #ffb000); }"
+    },
+    {
+      "name": "Flap Strip Row",
+      "kind": "custom",
+      "refersTo": "strip",
+      "description": "Pano tablosu satırı: her hücre tek parça flap şeridi; en iyi kehribar + lamba, boş değer tasarlanmış boş şerit.",
+      "html": "<div class=\"ds-row\"><span class=\"ds-strip ds-right ds-amber\">1</span><span class=\"ds-strip\"><span class=\"ds-lamp\"></span>GEFORCE RTX 4090</span><span class=\"ds-strip ds-right\">214</span><span class=\"ds-strip\" aria-label=\"veri yok\"></span></div>",
+      "css": ".ds-row { display: grid; grid-template-columns: 2.5rem 1fr 4rem 4rem; gap: 3px; } .ds-strip { position: relative; display: flex; align-items: center; gap: 0.5rem; min-height: 2.25rem; padding: 0.35rem 0.625rem; box-sizing: border-box; border-radius: 2px; background: linear-gradient(to bottom, var(--color-flap-top, #141518) 0 50%, var(--color-flap, #0c0d0f) 50% 100%); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04), inset 0 -1px 0 rgb(0 0 0 / 0.55); font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 500; font-size: 1.0625rem; line-height: 1.2; letter-spacing: 0.06em; color: var(--color-paint, #edece7); font-variant-numeric: tabular-nums; } .ds-strip::before { content: ''; position: absolute; inset-inline: 0; top: 50%; height: 1px; background: rgb(0 0 0 / 0.8); pointer-events: none; } .ds-right { justify-content: flex-end; } .ds-amber { color: var(--color-amber, #ffb000); } .ds-lamp { width: 0.5rem; height: 0.5rem; flex: none; border-radius: 999px; background: var(--color-amber, #ffb000); box-shadow: 0 0 0 2px rgb(255 176 0 / 0.18); }"
+    },
+    {
+      "name": "Amber Button",
+      "kind": "button",
+      "refersTo": "button-amber",
+      "description": "Birincil eylem; ekran başına bir tane.",
+      "html": "<button class=\"ds-btn ds-btn-amber\">GPU karşılaştır <svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10h11.5M11 5.5 15.5 10 11 14.5\"/></svg></button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 2.75rem; padding: 0 1.125rem; border-radius: 3px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 0.9375rem; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1), border-color 160ms cubic-bezier(0.16, 1, 0.3, 1), color 160ms cubic-bezier(0.16, 1, 0.3, 1), transform 120ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 2px solid var(--color-amber, #ffb000); outline-offset: 2px; } .ds-btn-amber { background: var(--color-amber, #ffb000); color: var(--color-amber-ink, #1a1200); border: 1px solid var(--color-amber-hot, #ffc233); } .ds-btn-amber:hover { background: var(--color-amber-hot, #ffc233); }"
+    },
+    {
+      "name": "Steel Button",
+      "kind": "button",
+      "refersTo": "button-steel",
+      "description": "İkincil eylem ve toggle; lamba ile açık/kapalı durumu.",
+      "html": "<button class=\"ds-btn-steel\" aria-pressed=\"true\"><span class=\"ds-lamp\"></span>Yalnızca farklar</button>",
+      "css": ".ds-btn-steel { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; padding: 0 1.125rem; border-radius: 3px; background: var(--color-steel-850, #1e2124); color: var(--color-paint, #edece7); border: 1px solid var(--color-steel-600, #4a5057); font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 0.9375rem; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1), border-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-steel:hover { background: var(--color-steel-800, #25292d); border-color: var(--color-steel-400, #989fa6); } .ds-btn-steel:active { transform: translateY(1px); } .ds-btn-steel:focus-visible { outline: 2px solid var(--color-amber, #ffb000); outline-offset: 2px; } .ds-lamp { width: 0.5rem; height: 0.5rem; border-radius: 999px; background: var(--color-amber, #ffb000); box-shadow: 0 0 0 2px rgb(255 176 0 / 0.18); }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Pano başlığındaki ve yardımcı bağlantı eylemleri.",
+      "html": "<button class=\"ds-btn-quiet\">Tüm pano <svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10h11.5M11 5.5 15.5 10 11 14.5\"/></svg></button>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.25rem; padding: 0 0.625rem; border-radius: 3px; background: transparent; color: var(--color-steel-300, #aab0b6); border: 1px solid transparent; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 0.9375rem; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; transition: color 160ms cubic-bezier(0.16, 1, 0.3, 1), border-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-quiet:hover { color: var(--color-paint, #edece7); border-color: var(--color-steel-700, #343a40); } .ds-btn-quiet:focus-visible { outline: 2px solid var(--color-amber, #ffb000); outline-offset: 2px; }"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Flap siyahı metin alanı; odakta kehribar kenar.",
+      "html": "<input class=\"ds-field\" type=\"search\" placeholder=\"Model ara\">",
+      "css": ".ds-field { width: 100%; min-height: 2.75rem; padding: 0 0.875rem; box-sizing: border-box; border-radius: 3px; background: var(--color-flap, #0c0d0f); border: 1px solid var(--color-steel-700, #343a40); color: var(--color-paint, #edece7); caret-color: var(--color-amber, #ffb000); font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 500; font-size: 1.0625rem; letter-spacing: 0.06em; transition: border-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-field::placeholder { color: var(--color-steel-400, #989fa6); letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.9375rem; } .ds-field:hover { border-color: var(--color-steel-600, #4a5057); } .ds-field:focus { outline: none; border-color: var(--color-amber, #ffb000); }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segmented-active",
+      "description": "Sıralama ekseni seçimi; seçili segment kehribar.",
+      "html": "<div class=\"ds-seg\" role=\"group\"><button aria-pressed=\"true\">Çok çekirdek</button><button aria-pressed=\"false\">Tek çekirdek</button><button aria-pressed=\"false\">Oyun</button></div>",
+      "css": ".ds-seg { display: inline-flex; gap: 2px; padding: 2px; border-radius: 3px; background: var(--color-flap, #0c0d0f); border: 1px solid var(--color-steel-700, #343a40); } .ds-seg button { min-height: 2.25rem; padding: 0 0.875rem; border: 0; border-radius: 2px; background: transparent; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 0.875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-steel-300, #aab0b6); cursor: pointer; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1), color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-seg button:hover { color: var(--color-paint, #edece7); } .ds-seg button[aria-pressed='true'] { background: var(--color-amber, #ffb000); color: var(--color-amber-ink, #1a1200); } .ds-seg button:focus-visible { outline: 2px solid var(--color-amber, #ffb000); outline-offset: 2px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Çelik şerit başlıkta gezinme; aktif öğe 2px kehribar alt çizgi, seçili sayı kehribar flap hücresinde.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-code\">GPU</span><a class=\"ds-nav-item ds-active\" href=\"#\">Karşılaştır <span class=\"ds-nav-count\">3</span></a><a class=\"ds-nav-item\" href=\"#\">Sıralama</a><a class=\"ds-nav-item\" href=\"#\">Yöntem</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 0.25rem; min-height: 4rem; padding: 0 1.5rem; background-color: var(--color-steel-field, #303336); background-image: url('/steel.png'); background-size: 256px 256px; background-blend-mode: overlay; border-bottom: 1px solid rgb(0 0 0 / 0.7); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06); } .ds-nav-code { margin-right: 0.25rem; padding-right: 0.75rem; border-right: 1px solid var(--color-steel-600, #4a5057); font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.14em; color: var(--color-steel-300, #aab0b6); } .ds-nav-item { position: relative; display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; padding: 0 0.5rem; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 0.9375rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--color-steel-200, #c9cdd1); transition: color 150ms; } .ds-nav-item:hover, .ds-nav-item.ds-active { color: var(--color-paint, #edece7); } .ds-nav-item::after { content: ''; position: absolute; left: 0.5rem; right: 0.5rem; bottom: -1px; height: 2px; background: transparent; transition: background-color 150ms; } .ds-nav-item.ds-active::after { background: var(--color-amber, #ffb000); } .ds-nav-item:focus-visible { outline: 2px solid var(--color-amber, #ffb000); outline-offset: 2px; } .ds-nav-count { display: inline-flex; align-items: center; justify-content: center; width: 0.78em; height: 1.12em; font-size: 0.8125rem; border-radius: 0.07em; background: linear-gradient(to bottom, #141518 0 50%, #0c0d0f 50% 100%); color: var(--color-amber, #ffb000); font-weight: 500; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Kalkış Panosu",
+    "overview": "Karşılaştırma bir gar kalkış panosu gibi okunur. Parçalar endekse göre sıralı satırlardır; sütunlar asla yer değiştirmez; bir değer değiştiğinde yalnızca etkilenen hücreler harf harf döner. Sayfa zemini ve pano çerçeveleri fırçalanmış çeliktir (`public/steel.png`, taban rengine `overlay` ile biner); veri, ortasından menteşe çizgisiyle bölünmüş mat siyah flap hücrelerinde beyaz boya harfle durur.\n\nYoğunluk yüksektir ve bu kasıtlıdır: pano tablo gibi davranır, kart ızgarası gibi değil. Her bölüm cetvelli bir pano çerçevesidir (başlık şeridi + gövde). Renk az ve anlamlıdır: kehribar \"seçili / en iyi / birincil eylem\", sinyal kırmızısı \"en düşük / hata\"; geri kalan her şey çelik ve boya. Reddedilen kategori varsayılanı: koyu lacivert zemin, mor/mavi neon gradyan, ikonlu kart ızgarası.\n\nHareket tek bir imzadan ibarettir: flap kaskadı. Sıralama, filtre, baz parça veya seçim değişince hücreler kademeli döner; `prefers-reduced-motion` altında anında değişir; ekran okuyucu yalnızca son değeri duyar.",
+    "keyCharacteristics": [
+      "Fırçalanmış çelik zemin ve çelik bezel içinde gömülü siyah pano yüzü.",
+      "Veri her zaman flap hücresinde veya flap şeridinde; menteşe çizgisi yapıdır, süs değil.",
+      "Tek aile: Barlow Condensed (pano, başlık, veri, etiket) + Barlow Semi Condensed (düz metin).",
+      "Kehribar ve sinyal kırmızısı yalnızca durum taşır; anlam asla yalnız renkle verilmez (sıra numarası, lamba, ok ikonu, etiket).",
+      "Eksik veri tasarlanmış boş flap hücresidir, çıplak tire değil."
+    ],
+    "rules": [
+      { "name": "The Lamba Rule", "body": "Kehribar yalnızca \"seçili, en iyi, birincil eylem, odak\" anlamına gelir. Dekoratif kehribar yoktur; bir ekranda kehribarın neyi işaret ettiği her zaman söylenebilmelidir.", "section": "colors" },
+      { "name": "The Çift Kanal Rule", "body": "En iyi/en düşük değer renk + işaretle verilir: kehribar lamba (`.lamp`) en iyiyi, kırmızı `sortDown` oku en düşüğü gösterir ve bir lejant bunu yazıyla açıklar. Kategoriler (GPU/CPU, sıra) etiket ve sıra numarasıyla ayrılır.", "section": "colors" },
+      { "name": "The Türkçe Büyük Harf Rule", "body": "Türkçe metin `toLocaleUpperCase('tr-TR')` ile büyütülür (i → İ); model adları `lang=\"en\"` taşır ve İngilizce büyütülür. Flap bileşenleri bunu kendisi yapar.", "section": "typography" },
+      { "name": "The Rakam Hizası Rule", "body": "Karşılaştırılan her sayı `tabular-nums` ile ve sağa hizalı durur; endeksler sabit hücre sayısına sola boşlukla tamamlanır (`padStart`).", "section": "typography" },
+      { "name": "The Gömülü Rule", "body": "Yüzeyler yükselmez, gömülür. Yeni bir kap `.board` bezelini kullanır; kendi gölgesini icat etmez.", "section": "elevation" },
+      { "name": "The İki Yaprak Rule", "body": "Flap hücresi ve şeridi daima `flap-top` üst yarı / `flap` alt yarı sert geçişli dolgu ve ortada 1px siyah menteşe çizgisi taşır. Bu, dünyanın kendi yapısıdır; \"gradyan yok\" kuralının istisnası değil, tanımıdır.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do her veriyi flap hücresi (`FlapText`) veya flap şeridi (`Strip`) içinde göster; sayılar `tabular-nums` ve sağa hizalı.",
+      "Do her yeni bölümü `Board` bezeli içine koy; alt bölümleri 1px `steel-800` cetvelle ayır.",
+      "Do kehribarı yalnızca seçili / en iyi / birincil eylem / odak için kullan ve üzerindeki metni `amber-ink` yap.",
+      "Do en iyi ve en düşük değeri renk + işaret (lamba, `sortDown` oku) + lejantla ver.",
+      "Do eksik veriyi boş flap şeridiyle göster ve ekran okuyucuya \"veri yok\" de.",
+      "Do her hareketi `prefers-reduced-motion` altında kapat; kaskad anında hedefe gitsin.",
+      "Do ikonları 20×20 viewBox, 1.75 konturlu SVG setinden (`Icon.jsx`) al."
+    ],
+    "donts": [
+      "Don't koyu lacivert zemin, mor/mavi neon gradyan veya ikonlu kart ızgarası kullanma.",
+      "Don't yüzen kart gölgesi veya bulanık drop-shadow ekleme; derinlik bezel ve flap yapraklarından gelir.",
+      "Don't kehribarı veya sinyal kırmızısını süs için kullanma; renk tek başına anlam taşımasın.",
+      "Don't veri hücrelerinde çıplak tire, sıfır veya tahmini dolgu gösterme.",
+      "Don't Barlow Condensed / Barlow Semi Condensed dışında yazı ailesi ekleme.",
+      "Don't değer değişince sütun sırasını veya tablo düzenini oynatma; yalnızca hücreler döner."
+    ]
+  }
+}

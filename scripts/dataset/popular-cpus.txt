@@ -1,0 +1,568 @@
+# En cok kullanilan / en bilinen CPU'lar — populerlik sirasina gore.
+#
+# Kurallar:
+#  - Isimler datasetteki (kaynak) adlandirmayla yazilir; mevcut kayitlarla
+#    birebir eslesme bu sayede calisir.
+#  - Yeni eklenecekler icin alt sinir 2006 (Core 2 / Athlon 64 X2 ve sonrasi);
+#    oncelik tum zamanlarin en populer ve bilinen parcalari.
+#  - Cekici listeyi yukaridan asagi yurur ve datasette olmayanlari ekler.
+#    Varsayilan olarak listenin tamami cekilir; --target N verilirse toplam
+#    N kayda ulasinca durur (o durumda sondakiler yedek kalir).
+#  - Satir basi # yorumdur.
+
+# --- Kademe 1: guncel cok satan masaustu -----------------------------------
+Ryzen 7 9800X3D
+Ryzen 7 7800X3D
+Ryzen 5 7600X
+Ryzen 5 5600
+Ryzen 7 5700X3D
+Ryzen 5 7500F
+Ryzen 7 5800X3D
+Ryzen 5 9600X
+Ryzen 7 9700X
+Ryzen 5 7600
+Ryzen 7 5700X
+Ryzen 5 5600X
+Core i5-12400F
+Core i5-13400F
+Core i5-14400F
+Core i5-12600K
+Core i5-13600K
+Core i5-14600K
+Core i7-12700K
+Core i7-13700K
+Core i7-14700K
+Core i9-13900K
+Core i9-14900K
+Core i3-12100F
+Ryzen 9 9950X3D
+Ryzen 9 9950X
+Ryzen 9 9900X
+Ryzen 7 7700X
+Ryzen 7 7700
+Ryzen 9 7950X3D
+Ryzen 9 7950X
+Ryzen 9 7900X
+Ryzen 9 7900X3D
+Ryzen 9 7900
+Core Ultra 7 265K
+Core Ultra 5 245K
+Core Ultra 9 285K
+Core i5-12600KF
+Core i5-13600KF
+Core i5-14600KF
+Core i7-12700KF
+Core i7-13700KF
+Core i7-14700KF
+Core i9-13900KF
+Core i9-14900KF
+Core i9-12900K
+Ryzen 7 9850X3D
+Ryzen 9 9900X3D
+Ryzen 5 9600
+Ryzen 5 7600X3D
+Ryzen 5 8400F
+Ryzen 5 8600G
+Ryzen 5 8500G
+Ryzen 7 8700G
+Ryzen 7 8700F
+Ryzen 5 5500
+Ryzen 5 5600G
+Ryzen 7 5700G
+Ryzen 7 5800X
+Ryzen 9 5900X
+Ryzen 9 5950X
+Ryzen 5 5600X3D
+Ryzen 5 5600GT
+Ryzen 5 5500GT
+Ryzen 7 5700
+Ryzen 7 5800XT
+Ryzen 9 5900XT
+Ryzen 5 5600XT
+Ryzen 5 5600T
+Ryzen 5 5500X3D
+Ryzen 5 4500
+Ryzen 5 4600G
+Ryzen 3 4100
+Core i3-13100F
+Core i3-14100F
+Core i5-14400
+Core i5-13400
+Core i5-12400
+Core Ultra 7 265KF
+Core Ultra 5 245KF
+Core Ultra 5 225F
+Core Ultra 5 225
+Core Ultra 5 235
+Core Ultra 7 265F
+Core Ultra 7 265
+Core Ultra 9 285
+
+# Kaynak: CPU populerlik listesi (son 90 gun, 2026-10-01); adlar kaynak katalogdaki yazimla.
+# 2006-2016 mikromimarilerinin (Core 2 Quad, Nehalem, Sandy Bridge, Broadwell, K10,
+# Bulldozer/Steamroller) IPC degeri henuz yok; endeksleri bos kalir.
+
+# --- Kademe 1b: populerlik listesinde olup veride olmayanlar (2026-10) ---------
+Core Ultra 7 270K Plus
+Core i5-1145G7
+Core i7-11850H
+Core i7-7700HQ
+Core i5-8365U
+Core Ultra 7 366H
+Core i7-4770
+Core i7-10850H
+Core i5-12450HX
+Core i5-7500
+Core i5-4590
+Ryzen 9 8940HX
+Ryzen 9 9950X3D2 Dual Edition
+Core i7-6700K
+Core i5-3470
+Core i5-1245U
+Core i7-8650U
+Core i5-7400
+Core i7-12800H
+Core i7-8665U
+Xeon E5-2680 v4
+
+# --- Kademe 1c: 2025-2026 cikislari (2026-10-01) ----------------------------
+Core Ultra 5 250K Plus
+Core Ultra 5 250KF Plus
+Ryzen 7 7700X3D
+Ryzen 5 7500
+Ryzen 5 5500F
+Ryzen 7 5800X3D AM4 10th Anniversary Edition
+Ryzen AI 7 450G
+Ryzen AI 5 440G
+Ryzen AI 5 435G
+Ryzen AI 7 450GE
+Ryzen AI 5 440GE
+Core Ultra 9 290HX Plus
+Core Ultra 7 270HX Plus
+Core Ultra X9 378H
+Core Ultra X7 368H
+Core Ultra 9 386H
+Core Ultra 7 356H
+Core Ultra 5 338H
+Core Ultra 5 336H
+Core 7 360
+Core 7 350
+Core 5 330
+Core 5 320
+Core 5 315
+Core 3 305
+Core 3 304
+Ryzen AI 9 HX 475
+Ryzen AI 9 HX 470
+Ryzen AI 9 465
+Ryzen AI 7 450
+Ryzen AI 7 445
+Ryzen AI 5 435
+Ryzen AI 5 430
+Ryzen 7 449
+Ryzen 5 439
+Ryzen AI Max+ 392
+Ryzen AI Max+ 388
+Ryzen AI Max+ PRO 495
+Ryzen AI Max PRO 490
+Ryzen AI Max PRO 485
+
+# --- Kademe 1d: tum zamanlarin bilinen islemcileri (2006-2016 klasikleri dahil) --
+Core 2 Duo E6600
+Core 2 Duo E6750
+Core 2 Duo E7500
+Core 2 Duo E8500
+Core 2 Quad Q6600 (95W)
+Core 2 Quad Q8200
+Core 2 Quad Q9400
+Core 2 Quad Q9550
+Core 2 Quad Q9650
+Core i7-920
+Core i7-930
+Core i7-950
+Core i7-860
+Core i5-750
+Core i5-760
+Core i3-530
+Core i7-970
+Core i7-980X
+Core i7-990X
+Core i3-2100
+Core i3-2120
+Core i5-2300
+Core i5-2310
+Core i5-2400
+Core i5-2500
+Core i5-2500K
+Core i7-2600
+Core i7-2600K
+Core i7-2700K
+Core i7-3930K
+Core i7-3960X
+Core i3-3220
+Core i5-3330
+Core i5-3570
+Core i5-3570K
+Core i7-3770K
+Core i7-4930K
+Core i3-4130
+Core i3-4160
+Core i3-4170
+Core i5-4440
+Core i5-4460
+Core i5-4570
+Core i5-4670K
+Core i5-4690
+Core i5-4690K
+Core i7-4770K
+Core i7-5775C
+Core i7-5820K
+Core i7-5930K
+Core i7-5960X
+Core i7-6800K
+Core i7-6850K
+Core i7-6900K
+Core i7-6950X
+Core i3-6100
+Core i5-6400
+Core i5-6600
+Core i5-6600K
+Core i3-7100
+Core i5-7600
+Core i5-7600K
+Core i7-7800X
+Core i7-7820X
+Core i9-7900X
+Core i9-7980XE
+Core i3-8350K
+Core i9-9900KS
+Pentium G3258
+Pentium G4400
+Pentium G4560
+Celeron G1840
+Core i5-3210M
+Core i5-3230M
+Core i7-3630QM
+Core i5-4200U
+Core i5-4210U
+Core i7-4500U
+Core i7-4700HQ
+Core i7-4710HQ
+Core i5-5200U
+Core i7-5500U
+Core i9-10980HK
+Core i9-11980HK
+Xeon E5-2670
+Xeon E5-2690 v4
+Xeon E3-1230 v3
+Xeon E3-1231 v3
+Athlon 64 X2 5000+
+Athlon II X2 250
+Athlon II X4 620
+Athlon II X4 640
+Phenom II X2 555 BE
+Phenom II X4 940 BE
+Phenom II X4 955 BE
+Phenom II X4 965 BE (125W)
+Phenom II X6 1055T (125W)
+Phenom II X6 1090T BE
+Phenom II X6 1100T BE
+FX-4300
+FX-6100
+FX-8120
+FX-8150
+FX-8320
+FX-8320E
+FX-8370
+FX-9370
+A4-6300
+A6-7400K
+A8-6600K
+A8-7600
+A10-5800K
+A10-6800K
+A10-7850K
+A10-7870K
+A8-9600
+A12-9800
+Athlon X4 860K
+Ryzen Threadripper 2990WX
+Ryzen 5 2500X
+
+# --- Kademe 2: guncel dizustu (2021+) --------------------------------------
+Core i5-12450H
+Core i5-13420H
+Core i7-13620H
+Core i7-12650H
+Core i5-12500H
+Core i7-12700H
+Core i7-13700H
+Core i5-13500H
+Core i5-1235U
+Core i7-1255U
+Core i3-1215U
+Core i5-1335U
+Core i7-1355U
+Core i5-1334U
+Core i5-1240P
+Core i7-1260P
+Core i5-13450HX
+Core i7-13650HX
+Core i7-13700HX
+Core i9-13900HX
+Core i9-13980HX
+Core i7-14650HX
+Core i7-14700HX
+Core i9-14900HX
+Core i5-14450HX
+Core i9-12900HX
+Core i9-12900H
+Core i9-13900H
+Core 5 120U
+Core 7 150U
+Core 5 210H
+Core 7 240H
+Core Ultra 7 155H
+Core Ultra 5 125H
+Core Ultra 5 125U
+Core Ultra 7 155U
+Core Ultra 9 185H
+Core Ultra 7 258V
+Core Ultra 5 226V
+Core Ultra 7 256V
+Core Ultra 9 288V
+Core Ultra 5 225H
+Core Ultra 7 255H
+Core Ultra 9 285H
+Core Ultra 7 255HX
+Core Ultra 9 275HX
+Core Ultra X9 388H
+Core Ultra X7 358H
+Ryzen 5 5500U
+Ryzen 5 7530U
+Ryzen 5 7520U
+Ryzen 5 5625U
+Ryzen 7 5825U
+Ryzen 7 5700U
+Ryzen 7 7730U
+Ryzen 5 7535HS
+Ryzen 7 7735HS
+Ryzen 5 6600H
+Ryzen 7 6800H
+Ryzen 7 7840HS
+Ryzen 7 8845HS
+Ryzen 7 7840U
+Ryzen 5 7640HS
+Ryzen 9 7940HS
+Ryzen 7 8840HS
+Ryzen 7 8840U
+Ryzen 5 8645HS
+Ryzen 5 8640HS
+Ryzen 9 8945HS
+Ryzen 5 7535U
+Ryzen 7 7435HS
+Ryzen 9 7945HX
+Ryzen 9 7845HX
+Ryzen 7 7745HX
+Ryzen 9 8945HX
+Ryzen 9 9955HX3D
+Ryzen 9 9955HX
+Ryzen 9 6900HX
+Ryzen 7 6800HS
+Ryzen AI 9 HX 370
+Ryzen AI 9 365
+Ryzen AI 7 350
+Ryzen AI 5 340
+Ryzen AI 9 HX 375
+Ryzen AI Max+ 395
+Ryzen AI Max 390
+Ryzen AI Max 385
+Ryzen 7 260
+Ryzen 7 250
+Ryzen 5 240
+Ryzen 5 220
+Ryzen 9 270
+Ryzen Z1 Extreme
+Ryzen Z1
+Ryzen Z2 Extreme
+Ryzen 3 7320U
+Processor N100
+Processor N150
+Processor N200
+Core i3-N305
+
+# --- Kademe 3: hala cok yaygin masaustu (2017-2021) ------------------------
+Ryzen 5 3600
+Ryzen 7 3700X
+Ryzen 5 2600
+Ryzen 5 1600
+Ryzen 3 3200G
+Ryzen 5 3400G
+Ryzen 5 3500X
+Ryzen 7 2700X
+Ryzen 5 2600X
+Ryzen 5 3600X
+Ryzen 9 3900X
+Ryzen 7 3800X
+Ryzen 3 3100
+Ryzen 3 3300X
+Ryzen 5 3500
+Ryzen 5 3600XT
+Ryzen 7 3800XT
+Ryzen 9 3900XT
+Ryzen 9 3950X
+Ryzen 7 2700
+Ryzen 3 2200G
+Ryzen 5 2400G
+Ryzen 5 1600AF
+Ryzen 5 1600X
+Ryzen 7 1700
+Ryzen 7 1700X
+Ryzen 7 1800X
+Ryzen 5 1500X
+Ryzen 5 1400
+Ryzen 3 1200
+Ryzen 3 1300X
+Ryzen 5 PRO 4650G
+Ryzen 3 4300G
+Ryzen 7 PRO 4750G
+Core i5-10400F
+Core i5-9400F
+Core i7-8700
+Core i9-9900K
+Core i5-10400
+Core i5-8400
+Core i7-8700K
+Core i3-8100
+Core i5-8500
+Core i5-8600K
+Core i5-9600K
+Core i5-9400
+Core i7-9700K
+Core i7-9700F
+Core i7-9700
+Core i9-9900KF
+Core i3-9100F
+Core i5-9500
+Core i3-10100
+Core i3-10105F
+Core i5-10500
+Core i5-10600K
+Core i5-10600KF
+Core i7-10700K
+Core i7-10700
+Core i7-10700F
+Core i7-10700KF
+Core i9-10900K
+Core i9-10850K
+Core i9-10900F
+Core i9-10900
+Core i5-11400F
+Core i5-11400
+Core i5-11600K
+Core i7-11700K
+Core i7-11700F
+Core i7-11700
+Core i9-11900K
+Core i7-8086K
+
+# --- Kademe 4: hala cok yaygin dizustu (2017-2021) -------------------------
+Ryzen 7 5800H
+Ryzen 7 5800HS
+Ryzen 9 5900HX
+Ryzen 5 5600U
+Ryzen 7 5800U
+Ryzen 3 5425U
+Ryzen 5 4600H
+Ryzen 7 4800H
+Ryzen 7 4700U
+Ryzen 7 4800U
+Ryzen 9 4900HS
+Ryzen 5 4500U
+Ryzen 3 4300U
+Ryzen 5 PRO 4650U
+Ryzen 5 PRO 5650U
+Ryzen 5 3500U
+Ryzen 7 3700U
+Ryzen 5 3550H
+Ryzen 7 3750H
+Ryzen 5 2500U
+Ryzen 7 2700U
+Core i5-1135G7
+Core i7-1165G7
+Core i3-1115G4
+Core i5-1155G7
+Core i7-1185G7
+Core i5-11400H
+Core i7-11800H
+Core i5-11300H
+Core i7-11370H
+Core i5-10210U
+Core i7-10510U
+Core i3-10110U
+Core i3-1005G1
+Core i5-1035G1
+Core i7-1065G7
+Core i7-10750H
+Core i5-10300H
+Core i7-10870H
+Core i7-9750H
+Core i5-9300H
+Core i7-8750H
+Core i5-8300H
+Core i5-8250U
+Core i7-8550U
+Core i5-8265U
+Core i7-8565U
+Core i5-8350U
+
+# --- Kademe 5: kalan masaustu ve dusuk guc -----------------------------------
+Core i5-12500
+Core i5-12600
+Core i5-12490F
+Core i7-12700F
+Core i7-12700
+Core i9-12900KF
+Core i9-12900KS
+Core i9-12900
+Core i3-12100
+Core i3-13100
+Core i3-14100
+Core i5-13500
+Core i5-14500
+Core i5-14490F
+Core i7-13700F
+Core i7-13700
+Core i7-14700F
+Core i7-14700
+Core i9-13900KS
+Core i9-13900F
+Core i9-14900KS
+Core i9-14900F
+Pentium Gold G5400
+Pentium Gold G6400
+Pentium Gold G7400
+Celeron N4020
+Celeron N4500
+Celeron N5100
+Pentium Silver N5000
+Pentium Silver N6000
+Athlon 3000G (FH)  # (FB) ile ayni ozellikler; yalnizca parca numarasi farkli
+Athlon 200GE
+Athlon Silver 3050U
+Athlon Gold 7220U
+
+# --- Kademe 6: HEDT / is istasyonu (yedek) ---------------------------------
+Ryzen Threadripper 3990X
+Ryzen Threadripper 3970X
+Ryzen Threadripper 7980X
+Ryzen Threadripper 7970X
+Ryzen Threadripper 9980X
+Ryzen Threadripper 1950X
+Ryzen Threadripper PRO 9995WX
+# Cinebench R23 olcumu olan HEDT'ler; cok cekirdek kalibrasyonu icin
+# (scripts/calibration/targets-cpu.json).
+Ryzen Threadripper PRO 7995WX
+Ryzen Threadripper PRO 3995WX
+Ryzen Threadripper PRO 3975WX
+Core i9-10980XE

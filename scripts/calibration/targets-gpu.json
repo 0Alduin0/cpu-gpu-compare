@@ -1,0 +1,1668 @@
+{
+ "_about": "GPU kalibrasyon hedefleri, GeForce RTX 4060 = 100. relative-performance: kaynak GPU veritabanının göreli performans listeleri (2026-09-30). timespy: bağımsız 3DMark Time Spy Graphics ortalamaları, göreli performans = e^-3.122 × TS^0.819 (TS < 6000) / e^-3.615 × TS^0.883 ile çevrildi; Intel ×0.81. 2026-10-01: veritabanına eklenen 95 kart (2006-2016 klasikleri ve 2025-2026 çıkışları) aynı yöntemle, hedefi olan kartlardan (%30-300) geometrik ortalama; tek kartlık dağılım %0.6-2.4. GT 710 ve HD 5670 iki adımlı zincirle. Çift GPU'lu kartlar (GTX 295/590/690, HD 5970/6990/7990, R9 295X2) \"fit\": false: göreli performans ölçümü SLI/CrossFire ölçeklemeli, model tek GPU'nun özellikleriyle hesaplar (güncel oyunlarda çoklu GPU yok).",
+ "targets": {
+  "Arc 130V Mobile": {
+   "value": 27.9,
+   "source": "timespy"
+  },
+  "Arc 140T Mobile": {
+   "value": 30.8,
+   "source": "timespy"
+  },
+  "Arc 140V Mobile": {
+   "value": 32.1,
+   "source": "timespy"
+  },
+  "Arc A310": {
+   "value": 23.4,
+   "source": "relative-performance"
+  },
+  "Arc A350M": {
+   "value": 25.9,
+   "source": "relative-performance"
+  },
+  "Arc A370M": {
+   "value": 29.1,
+   "source": "relative-performance"
+  },
+  "Arc A380": {
+   "value": 33.0,
+   "source": "relative-performance"
+  },
+  "Arc A550M": {
+   "value": 48.1,
+   "source": "relative-performance"
+  },
+  "Arc A580": {
+   "value": 74.0,
+   "source": "relative-performance"
+  },
+  "Arc A730M": {
+   "value": 64.5,
+   "source": "relative-performance"
+  },
+  "Arc A750": {
+   "value": 82.0,
+   "source": "relative-performance"
+  },
+  "Arc A770": {
+   "value": 89.0,
+   "source": "relative-performance"
+  },
+  "Arc A770M": {
+   "value": 83.3,
+   "source": "relative-performance"
+  },
+  "Arc B570": {
+   "value": 86.7,
+   "source": "relative-performance"
+  },
+  "Arc B580": {
+   "value": 100.0,
+   "source": "relative-performance"
+  },
+  "Arc Graphics 128EU Mobile": {
+   "value": 27.0,
+   "source": "timespy"
+  },
+  "Arc Pro B50": {
+   "value": 72.6,
+   "source": "relative-performance"
+  },
+  "Arc Pro B60": {
+   "value": 94.1,
+   "source": "relative-performance"
+  },
+  "GeForce GT 1030": {
+   "value": 11.0,
+   "source": "relative-performance"
+  },
+  "GeForce GT 1030 DDR4": {
+   "value": 8.7,
+   "source": "relative-performance"
+  },
+  "GeForce GT 730": {
+   "value": 4.1,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1050": {
+   "value": 22.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1050 3 GB": {
+   "value": 24.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1050 Max-Q": {
+   "value": 19.3,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1050 Mobile": {
+   "value": 23.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1050 Ti": {
+   "value": 28.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1050 Ti Max-Q": {
+   "value": 23.6,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1050 Ti Mobile": {
+   "value": 27.2,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1060 3 GB": {
+   "value": 40.7,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1060 5 GB": {
+   "value": 41.1,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1060 6 GB": {
+   "value": 44.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1060 Max-Q": {
+   "value": 39.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1060 Mobile": {
+   "value": 42.5,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1070": {
+   "value": 59.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1070 Max-Q": {
+   "value": 52.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1070 Mobile": {
+   "value": 57.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1070 Ti": {
+   "value": 65.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1080": {
+   "value": 66.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1080 Max-Q": {
+   "value": 62.2,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1080 Mobile": {
+   "value": 70.7,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1080 Ti": {
+   "value": 89.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1630": {
+   "value": 22.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1650": {
+   "value": 34.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1650 GDDR6": {
+   "value": 36.4,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1650 Max-Q": {
+   "value": 29.7,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1650 Mobile": {
+   "value": 35.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1650 SUPER": {
+   "value": 46.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1650 Ti Mobile": {
+   "value": 37.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1660": {
+   "value": 52.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1660 SUPER": {
+   "value": 56.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1660 Ti": {
+   "value": 56.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1660 Ti Max-Q": {
+   "value": 49.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 1660 Ti Mobile": {
+   "value": 54.9,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 550 Ti": {
+   "value": 9.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 750 Ti": {
+   "value": 16.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 960": {
+   "value": 26.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 970": {
+   "value": 40.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 980": {
+   "value": 47.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 980 Ti": {
+   "value": 53.0,
+   "source": "relative-performance"
+  },
+  "GeForce MX110": {
+   "value": 7.8,
+   "source": "relative-performance"
+  },
+  "GeForce MX130": {
+   "value": 10.7,
+   "source": "relative-performance"
+  },
+  "GeForce MX150": {
+   "value": 9.4,
+   "source": "relative-performance"
+  },
+  "GeForce MX230": {
+   "value": 9.8,
+   "source": "relative-performance"
+  },
+  "GeForce MX250": {
+   "value": 13.1,
+   "source": "relative-performance"
+  },
+  "GeForce MX330": {
+   "value": 13.8,
+   "source": "relative-performance"
+  },
+  "GeForce MX350": {
+   "value": 13.6,
+   "source": "relative-performance"
+  },
+  "GeForce MX550": {
+   "value": 29.4,
+   "source": "relative-performance"
+  },
+  "GeForce MX570": {
+   "value": 31.7,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2050 Mobile": {
+   "value": 34.6,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2060": {
+   "value": 68.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2060 12 GB": {
+   "value": 71.2,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2060 Max-Q": {
+   "value": 51.6,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2060 Mobile": {
+   "value": 55.3,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2060 SUPER": {
+   "value": 73.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2070": {
+   "value": 79.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2070 Max-Q": {
+   "value": 63.1,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2070 Mobile": {
+   "value": 73.5,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2070 SUPER": {
+   "value": 90.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2070 SUPER Max-Q": {
+   "value": 64.5,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2070 SUPER Mobile": {
+   "value": 76.1,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2080": {
+   "value": 97.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2080 Max-Q": {
+   "value": 69.4,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2080 Mobile": {
+   "value": 89.4,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2080 SUPER": {
+   "value": 101.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2080 SUPER Max-Q": {
+   "value": 65.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2080 SUPER Mobile": {
+   "value": 90.6,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 2080 Ti": {
+   "value": 126.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3050 6 GB": {
+   "value": 46.2,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3050 8 GB": {
+   "value": 53.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3050 A Mobile": {
+   "value": 38.8,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3050 Mobile": {
+   "value": 42.1,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3050 Mobile Refresh 6 GB": {
+   "value": 49.7,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3050 OEM": {
+   "value": 55.8,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3050 Ti Mobile": {
+   "value": 41.2,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3060 12 GB": {
+   "value": 85.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3060 8 GB": {
+   "value": 72.7,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3060 Max-Q": {
+   "value": 67.7,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3060 Mobile": {
+   "value": 75.5,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3060 Ti": {
+   "value": 111.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3060 Ti GDDR6X": {
+   "value": 111.4,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3070": {
+   "value": 127.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3070 Max-Q": {
+   "value": 87.8,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3070 Mobile": {
+   "value": 102.1,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3070 Ti": {
+   "value": 135.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3070 Ti Mobile": {
+   "value": 104.4,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3080": {
+   "value": 160.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3080 12 GB": {
+   "value": 173.4,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3080 Max-Q": {
+   "value": 95.6,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3080 Mobile": {
+   "value": 112.5,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3080 Ti": {
+   "value": 178.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3080 Ti Mobile": {
+   "value": 115.4,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3090": {
+   "value": 180.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 3090 Ti": {
+   "value": 202.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4050": {
+   "value": 87.1,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4050 Mobile": {
+   "value": 68.1,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4060": {
+   "value": 100.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4060 Mobile": {
+   "value": 83.8,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4060 Ti 16 GB": {
+   "value": 120.4,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4060 Ti 8 GB": {
+   "value": 125.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4070": {
+   "value": 164.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4070 Mobile": {
+   "value": 97.9,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4070 SUPER": {
+   "value": 172.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4070 Ti": {
+   "value": 185.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4070 Ti SUPER": {
+   "value": 202.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4080": {
+   "value": 239.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4080 Mobile": {
+   "value": 140.7,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4080 SUPER": {
+   "value": 241.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4090": {
+   "value": 312.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4090 D": {
+   "value": 308.5,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 4090 Mobile": {
+   "value": 175.3,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5050": {
+   "value": 97.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5050 Mobile": {
+   "value": 73.9,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5060": {
+   "value": 123.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5060 Mobile": {
+   "value": 83.9,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5060 Ti 16 GB": {
+   "value": 143.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5060 Ti 8 GB": {
+   "value": 142.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5070": {
+   "value": 183.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5070 Mobile": {
+   "value": 98.9,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5070 Ti": {
+   "value": 235.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5070 Ti Mobile": {
+   "value": 130.9,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5080": {
+   "value": 270.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5080 Mobile": {
+   "value": 165.8,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5090": {
+   "value": 409.0,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5090 D": {
+   "value": 427.7,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5090 Mobile": {
+   "value": 197.4,
+   "source": "relative-performance"
+  },
+  "Iris Xe Graphics G4 48EU Mobile": {
+   "value": 8.5,
+   "source": "timespy"
+  },
+  "Iris Xe Graphics G7 80EU Mobile": {
+   "value": 11.7,
+   "source": "timespy"
+  },
+  "Iris Xe Graphics G7 96EU Mobile": {
+   "value": 14.7,
+   "source": "timespy"
+  },
+  "L40S": {
+   "value": 333.7,
+   "source": "relative-performance"
+  },
+  "Quadro P1000": {
+   "value": 18.2,
+   "source": "relative-performance"
+  },
+  "Quadro P2000": {
+   "value": 32.5,
+   "source": "relative-performance"
+  },
+  "Quadro P400": {
+   "value": 7.7,
+   "source": "relative-performance"
+  },
+  "Quadro P4000": {
+   "value": 50.4,
+   "source": "relative-performance"
+  },
+  "Quadro P5000": {
+   "value": 68.8,
+   "source": "relative-performance"
+  },
+  "Quadro P600": {
+   "value": 14.2,
+   "source": "relative-performance"
+  },
+  "Quadro P620": {
+   "value": 16.9,
+   "source": "relative-performance"
+  },
+  "Quadro RTX 4000": {
+   "value": 75.0,
+   "source": "relative-performance"
+  },
+  "Quadro RTX 5000": {
+   "value": 98.8,
+   "source": "relative-performance"
+  },
+  "Quadro RTX 6000": {
+   "value": 136.5,
+   "source": "relative-performance"
+  },
+  "Quadro RTX 8000": {
+   "value": 136.5,
+   "source": "relative-performance"
+  },
+  "Quadro T1000 Mobile": {
+   "value": 31.1,
+   "source": "relative-performance"
+  },
+  "Quadro T2000 Mobile": {
+   "value": 37.7,
+   "source": "relative-performance"
+  },
+  "RTX 2000 Ada Generation": {
+   "value": 85.2,
+   "source": "relative-performance"
+  },
+  "RTX 2000 Mobile Ada Generation": {
+   "value": 88.8,
+   "source": "relative-performance"
+  },
+  "RTX 3500 Mobile Ada Generation": {
+   "value": 111.5,
+   "source": "relative-performance"
+  },
+  "RTX 4000 Ada Generation": {
+   "value": 140.2,
+   "source": "relative-performance"
+  },
+  "RTX 4000 SFF Ada Generation": {
+   "value": 111.1,
+   "source": "relative-performance"
+  },
+  "RTX 4500 Ada Generation": {
+   "value": 180.1,
+   "source": "relative-performance"
+  },
+  "RTX 5000 Ada Generation": {
+   "value": 252.5,
+   "source": "relative-performance"
+  },
+  "RTX 5000 Mobile Ada Generation": {
+   "value": 197.3,
+   "source": "relative-performance"
+  },
+  "RTX 6000 Ada Generation": {
+   "value": 341.2,
+   "source": "relative-performance"
+  },
+  "RTX A1000": {
+   "value": 47.7,
+   "source": "relative-performance"
+  },
+  "RTX A1000 Mobile": {
+   "value": 37.2,
+   "source": "relative-performance"
+  },
+  "RTX A2000": {
+   "value": 59.5,
+   "source": "relative-performance"
+  },
+  "RTX A2000 12 GB": {
+   "value": 59.5,
+   "source": "relative-performance"
+  },
+  "RTX A2000 Mobile": {
+   "value": 55.7,
+   "source": "relative-performance"
+  },
+  "RTX A3000 Mobile": {
+   "value": 67.0,
+   "source": "relative-performance"
+  },
+  "RTX A400": {
+   "value": 22.7,
+   "source": "relative-performance"
+  },
+  "RTX A4000": {
+   "value": 113.2,
+   "source": "relative-performance"
+  },
+  "RTX A4500": {
+   "value": 138.7,
+   "source": "relative-performance"
+  },
+  "RTX A5000": {
+   "value": 157.9,
+   "source": "relative-performance"
+  },
+  "RTX A5000 Mobile": {
+   "value": 113.8,
+   "source": "relative-performance"
+  },
+  "RTX A5500": {
+   "value": 175.6,
+   "source": "relative-performance"
+  },
+  "RTX A6000": {
+   "value": 187.9,
+   "source": "relative-performance"
+  },
+  "RTX PRO 2000 Blackwell Workstation": {
+   "value": 105.9,
+   "source": "relative-performance"
+  },
+  "RTX PRO 4000 Blackwell Workstation": {
+   "value": 199.1,
+   "source": "relative-performance"
+  },
+  "RTX PRO 4500 Blackwell Workstation": {
+   "value": 252.2,
+   "source": "relative-performance"
+  },
+  "RTX PRO 5000 Blackwell Workstation": {
+   "value": 320.3,
+   "source": "relative-performance"
+  },
+  "RTX PRO 6000 Blackwell Workstation": {
+   "value": 469.1,
+   "source": "relative-performance"
+  },
+  "Radeon 610M": {
+   "value": 7.3,
+   "source": "timespy"
+  },
+  "Radeon 660M": {
+   "value": 17.9,
+   "source": "timespy"
+  },
+  "Radeon 680M": {
+   "value": 25.0,
+   "source": "timespy"
+  },
+  "Radeon 740M": {
+   "value": 17.9,
+   "source": "timespy"
+  },
+  "Radeon 760M": {
+   "value": 24.8,
+   "source": "timespy"
+  },
+  "Radeon 780M": {
+   "value": 29.4,
+   "source": "timespy"
+  },
+  "Radeon 8040S": {
+   "value": 39.5,
+   "source": "timespy",
+   "fit": false,
+   "note": "tek cihaz; guvenilir degil, fit disi"
+  },
+  "Radeon 8050S": {
+   "value": 87.6,
+   "source": "timespy"
+  },
+  "Radeon 8060S": {
+   "value": 99.8,
+   "source": "timespy"
+  },
+  "Radeon 840M": {
+   "value": 16.8,
+   "source": "timespy"
+  },
+  "Radeon 860M": {
+   "value": 27.3,
+   "source": "timespy"
+  },
+  "Radeon 880M": {
+   "value": 33.8,
+   "source": "timespy"
+  },
+  "Radeon 890M": {
+   "value": 33.8,
+   "source": "timespy"
+  },
+  "Radeon AI PRO R9700": {
+   "value": 225.7,
+   "source": "relative-performance"
+  },
+  "Radeon PRO W6400": {
+   "value": 35.4,
+   "source": "relative-performance"
+  },
+  "Radeon PRO W6600": {
+   "value": 76.8,
+   "source": "relative-performance"
+  },
+  "Radeon PRO W6800": {
+   "value": 140.1,
+   "source": "relative-performance"
+  },
+  "Radeon PRO W7500": {
+   "value": 66.6,
+   "source": "relative-performance"
+  },
+  "Radeon PRO W7600": {
+   "value": 90.7,
+   "source": "relative-performance"
+  },
+  "Radeon PRO W7700": {
+   "value": 127.4,
+   "source": "relative-performance"
+  },
+  "Radeon PRO W7800": {
+   "value": 172.7,
+   "source": "relative-performance"
+  },
+  "Radeon PRO W7900": {
+   "value": 227.9,
+   "source": "relative-performance"
+  },
+  "Radeon Pro VII": {
+   "value": 85.2,
+   "source": "relative-performance"
+  },
+  "Radeon Pro W5700": {
+   "value": 74.1,
+   "source": "relative-performance"
+  },
+  "Radeon Pro WX 3100": {
+   "value": 13.4,
+   "source": "relative-performance"
+  },
+  "Radeon Pro WX 5100": {
+   "value": 29.7,
+   "source": "relative-performance"
+  },
+  "Radeon Pro WX 7100": {
+   "value": 40.8,
+   "source": "relative-performance"
+  },
+  "Radeon Pro WX 9100": {
+   "value": 68.4,
+   "source": "relative-performance"
+  },
+  "Radeon RX 460": {
+   "value": 19.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 470": {
+   "value": 37.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 480": {
+   "value": 42.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 5300 OEM": {
+   "value": 40.3,
+   "source": "relative-performance"
+  },
+  "Radeon RX 5300M": {
+   "value": 37.5,
+   "source": "relative-performance"
+  },
+  "Radeon RX 550": {
+   "value": 13.9,
+   "source": "relative-performance"
+  },
+  "Radeon RX 5500 OEM": {
+   "value": 44.5,
+   "source": "relative-performance"
+  },
+  "Radeon RX 5500 XT": {
+   "value": 45.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 5500M": {
+   "value": 43.5,
+   "source": "relative-performance"
+  },
+  "Radeon RX 560": {
+   "value": 20.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 5600 XT": {
+   "value": 65.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 5600M": {
+   "value": 52.9,
+   "source": "relative-performance"
+  },
+  "Radeon RX 560X Mobile": {
+   "value": 19.6,
+   "source": "relative-performance"
+  },
+  "Radeon RX 570": {
+   "value": 39.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 5700": {
+   "value": 68.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 5700 XT": {
+   "value": 80.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 570X": {
+   "value": 38.1,
+   "source": "relative-performance"
+  },
+  "Radeon RX 580": {
+   "value": 45.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 580 2048SP": {
+   "value": 38.8,
+   "source": "relative-performance"
+  },
+  "Radeon RX 580X": {
+   "value": 44.1,
+   "source": "relative-performance"
+  },
+  "Radeon RX 590": {
+   "value": 49.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6300 OEM": {
+   "value": 28.3,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6300M": {
+   "value": 26.9,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6400": {
+   "value": 34.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6500 XT": {
+   "value": 46.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6500M": {
+   "value": 45.1,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6550M": {
+   "value": 45.6,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6600": {
+   "value": 76.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6600 XT": {
+   "value": 84.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6600M": {
+   "value": 73.8,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6600S": {
+   "value": 65.6,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6650 XT": {
+   "value": 94.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6650M": {
+   "value": 73.8,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6700": {
+   "value": 95.5,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6700 XT": {
+   "value": 109.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6700M": {
+   "value": 94.3,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6700S": {
+   "value": 65.6,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6750 GRE 10 GB": {
+   "value": 95.5,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6750 GRE 12 GB": {
+   "value": 113.2,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6750 XT": {
+   "value": 120.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6800": {
+   "value": 131.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6800 XT": {
+   "value": 154.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6800M": {
+   "value": 105.1,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6800S": {
+   "value": 76.4,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6850M XT": {
+   "value": 113.2,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6900 XT": {
+   "value": 163.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 6950 XT": {
+   "value": 167.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7600": {
+   "value": 94.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7600 XT": {
+   "value": 100.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7600M": {
+   "value": 81.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7600M XT": {
+   "value": 91.5,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7600S": {
+   "value": 77.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7650 GRE": {
+   "value": 96.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7700 XT": {
+   "value": 140.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7700S": {
+   "value": 92.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7800 XT": {
+   "value": 160.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7800M": {
+   "value": 147.4,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7900 GRE": {
+   "value": 169.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7900 XT": {
+   "value": 206.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7900 XTX": {
+   "value": 239.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7900M": {
+   "value": 157.7,
+   "source": "relative-performance"
+  },
+  "Radeon RX 9060": {
+   "value": 117.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 9060 XT 16 GB": {
+   "value": 136.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 9060 XT 8 GB": {
+   "value": 128.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 9070": {
+   "value": 201.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 9070 GRE": {
+   "value": 168.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX 9070 XT": {
+   "value": 225.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX Vega 10 Mobile": {
+   "value": 9.8,
+   "source": "timespy"
+  },
+  "Radeon RX Vega 11": {
+   "value": 12.0,
+   "source": "timespy"
+  },
+  "Radeon RX Vega 56": {
+   "value": 61.0,
+   "source": "relative-performance"
+  },
+  "Radeon RX Vega 64": {
+   "value": 70.0,
+   "source": "relative-performance"
+  },
+  "Radeon VII": {
+   "value": 84.0,
+   "source": "relative-performance"
+  },
+  "Radeon Vega 3": {
+   "value": 5.9,
+   "source": "timespy"
+  },
+  "Radeon Vega 6 Mobile": {
+   "value": 7.8,
+   "source": "timespy"
+  },
+  "Radeon Vega 8": {
+   "value": 9.3,
+   "source": "timespy"
+  },
+  "T1000": {
+   "value": 32.2,
+   "source": "relative-performance"
+  },
+  "T1000 8 GB": {
+   "value": 32.2,
+   "source": "relative-performance"
+  },
+  "T400 4 GB": {
+   "value": 16.5,
+   "source": "relative-performance"
+  },
+  "T600": {
+   "value": 25.8,
+   "source": "relative-performance"
+  },
+  "TITAN RTX": {
+   "value": 136.5,
+   "source": "relative-performance"
+  },
+  "TITAN V": {
+   "value": 111.1,
+   "source": "relative-performance"
+  },
+  "TITAN X Pascal": {
+   "value": 86.1,
+   "source": "relative-performance"
+  },
+  "TITAN Xp": {
+   "value": 95.4,
+   "source": "relative-performance"
+  },
+  "UHD Graphics 600 Mobile": {
+   "value": 1.7,
+   "source": "timespy"
+  },
+  "UHD Graphics 610": {
+   "value": 2.7,
+   "source": "timespy"
+  },
+  "UHD Graphics 730": {
+   "value": 5.9,
+   "source": "timespy"
+  },
+  "UHD Graphics 750": {
+   "value": 7.0,
+   "source": "timespy"
+  },
+  "UHD Graphics 770": {
+   "value": 8.0,
+   "source": "timespy"
+  },
+  "Tesla T4": {
+   "value": 75.6,
+   "source": "relative-performance"
+  },
+  "L4": {
+   "value": 143.3,
+   "source": "relative-performance"
+  },
+  "A10 PCIe": {
+   "value": 158.4,
+   "source": "relative-performance"
+  },
+  "Tesla V100 PCIe 16 GB": {
+   "value": 117.0,
+   "source": "relative-performance"
+  },
+  "Tesla P100 PCIe 16 GB": {
+   "value": 89.8,
+   "source": "relative-performance"
+  },
+  "Tesla P40": {
+   "value": 83.7,
+   "source": "relative-performance"
+  },
+  "GeForce 210": {
+   "value": 0.9,
+   "source": "relative-performance"
+  },
+  "UHD Graphics 620 Mobile": {
+   "value": 4.7,
+   "source": "timespy"
+  },
+  "UHD Graphics 630": {
+   "value": 4.9,
+   "source": "timespy"
+  },
+  "UHD Graphics 605 Mobile": {
+   "value": 2.1,
+   "source": "timespy",
+   "fit": false,
+   "note": "yalnizca 2 cihaz (Pentium N5030 7,5 W: 113, J5005: 183); fit disi"
+  },
+  "Iris Plus Graphics G7 64EU Mobile": {
+   "value": 8.0,
+   "source": "timespy"
+  },
+  "GeForce MX450 30.5W 10Gbps": {
+   "value": 28.7,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 680": {
+   "value": 26.9,
+   "source": "relative-performance"
+  },
+  "Radeon RX 9050": {
+   "value": 79.2,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5060 GB205": {
+   "value": 126.2,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5070 GB203": {
+   "value": 180.9,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5070 Mobile 12 GB": {
+   "value": 98.9,
+   "source": "relative-performance"
+  },
+  "Radeon RX 7700": {
+   "value": 126.4,
+   "source": "relative-performance"
+  },
+  "Radeon RX 9060 XT LP": {
+   "value": 131.3,
+   "source": "relative-performance"
+  },
+  "GeForce RTX 5090 D V2": {
+   "value": 400.3,
+   "source": "relative-performance"
+  },
+  "Arc Pro B70": {
+   "value": 142.9,
+   "source": "relative-performance"
+  },
+  "Arc Pro B65": {
+   "value": 101.2,
+   "source": "relative-performance"
+  },
+  "RTX PRO 5500 Blackwell Workstation": {
+   "value": 406.7,
+   "source": "relative-performance"
+  },
+  "RTX PRO 5000 72 GB Blackwell Workstation": {
+   "value": 320.3,
+   "source": "relative-performance"
+  },
+  "RTX PRO 6000 Blackwell Max-Q Workstation": {
+   "value": 437.6,
+   "source": "relative-performance"
+  },
+  "RTX PRO 4000 Blackwell SFF": {
+   "value": 141.5,
+   "source": "relative-performance"
+  },
+  "RTX PRO 4500 Blackwell Server": {
+   "value": 245.9,
+   "source": "relative-performance"
+  },
+  "RTX PRO 6000 Blackwell Server": {
+   "value": 440.1,
+   "source": "relative-performance"
+  },
+  "Radeon AI PRO R9700S": {
+   "value": 225.7,
+   "source": "relative-performance"
+  },
+  "Radeon PRO W7400": {
+   "value": 47.0,
+   "source": "relative-performance"
+  },
+  "GeForce 8800 GT": {
+   "value": 6.1,
+   "source": "relative-performance"
+  },
+  "GeForce 8800 GTX": {
+   "value": 6.9,
+   "source": "relative-performance"
+  },
+  "GeForce 8800 GTS 512": {
+   "value": 7.1,
+   "source": "relative-performance"
+  },
+  "GeForce 9800 GT": {
+   "value": 6.1,
+   "source": "relative-performance"
+  },
+  "GeForce 9800 GTX+": {
+   "value": 7.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 260": {
+   "value": 9.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 275": {
+   "value": 11.2,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 280": {
+   "value": 11.2,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 285": {
+   "value": 12.3,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 295": {
+   "value": 17.0,
+   "source": "relative-performance",
+   "fit": false
+  },
+  "GeForce GTS 450": {
+   "value": 7.4,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 460": {
+   "value": 10.9,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 470": {
+   "value": 14.0,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 480": {
+   "value": 17.6,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 560 Ti": {
+   "value": 15.9,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 570": {
+   "value": 19.2,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 580": {
+   "value": 21.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 590": {
+   "value": 30.0,
+   "source": "relative-performance",
+   "fit": false
+  },
+  "GeForce GTX 650": {
+   "value": 9.3,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 650 Ti": {
+   "value": 13.4,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 650 Ti Boost": {
+   "value": 17.2,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 660": {
+   "value": 19.2,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 660 Ti": {
+   "value": 21.7,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 670": {
+   "value": 24.9,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 690": {
+   "value": 42.7,
+   "source": "relative-performance",
+   "fit": false
+  },
+  "GeForce GTX 750": {
+   "value": 14.1,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 760": {
+   "value": 21.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 770": {
+   "value": 26.5,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 780": {
+   "value": 33.2,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 780 Ti": {
+   "value": 41.4,
+   "source": "relative-performance"
+  },
+  "GeForce GTX TITAN": {
+   "value": 40.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX TITAN BLACK": {
+   "value": 42.5,
+   "source": "relative-performance"
+  },
+  "GeForce GTX 950": {
+   "value": 20.8,
+   "source": "relative-performance"
+  },
+  "GeForce GTX TITAN X": {
+   "value": 54.4,
+   "source": "relative-performance"
+  },
+  "Radeon HD 4850": {
+   "value": 7.0,
+   "source": "relative-performance"
+  },
+  "Radeon HD 4870": {
+   "value": 9.1,
+   "source": "relative-performance"
+  },
+  "Radeon HD 5750": {
+   "value": 7.6,
+   "source": "relative-performance"
+  },
+  "Radeon HD 5770": {
+   "value": 8.8,
+   "source": "relative-performance"
+  },
+  "Radeon HD 5850": {
+   "value": 13.1,
+   "source": "relative-performance"
+  },
+  "Radeon HD 5870": {
+   "value": 15.4,
+   "source": "relative-performance"
+  },
+  "Radeon HD 5970": {
+   "value": 22.5,
+   "source": "relative-performance",
+   "fit": false
+  },
+  "Radeon HD 6670": {
+   "value": 6.0,
+   "source": "relative-performance"
+  },
+  "Radeon HD 6750": {
+   "value": 7.5,
+   "source": "relative-performance"
+  },
+  "Radeon HD 6770": {
+   "value": 8.9,
+   "source": "relative-performance"
+  },
+  "Radeon HD 6850": {
+   "value": 12.0,
+   "source": "relative-performance"
+  },
+  "Radeon HD 6870": {
+   "value": 14.5,
+   "source": "relative-performance"
+  },
+  "Radeon HD 6950": {
+   "value": 16.4,
+   "source": "relative-performance"
+  },
+  "Radeon HD 6970": {
+   "value": 18.4,
+   "source": "relative-performance"
+  },
+  "Radeon HD 6990": {
+   "value": 28.9,
+   "source": "relative-performance",
+   "fit": false
+  },
+  "Radeon HD 7750": {
+   "value": 8.7,
+   "source": "relative-performance"
+  },
+  "Radeon HD 7770 GHz Edition": {
+   "value": 11.2,
+   "source": "relative-performance"
+  },
+  "Radeon HD 7790": {
+   "value": 13.4,
+   "source": "relative-performance"
+  },
+  "Radeon HD 7850": {
+   "value": 17.3,
+   "source": "relative-performance"
+  },
+  "Radeon HD 7870 GHz Edition": {
+   "value": 20.9,
+   "source": "relative-performance"
+  },
+  "Radeon HD 7950": {
+   "value": 22.0,
+   "source": "relative-performance"
+  },
+  "Radeon HD 7970": {
+   "value": 26.6,
+   "source": "relative-performance"
+  },
+  "Radeon HD 7970 GHz Edition": {
+   "value": 30.0,
+   "source": "relative-performance"
+  },
+  "Radeon HD 7990": {
+   "value": 42.2,
+   "source": "relative-performance",
+   "fit": false
+  },
+  "Radeon R7 250": {
+   "value": 8.8,
+   "source": "relative-performance"
+  },
+  "Radeon R7 260X": {
+   "value": 15.1,
+   "source": "relative-performance"
+  },
+  "Radeon R7 370": {
+   "value": 19.1,
+   "source": "relative-performance"
+  },
+  "Radeon R9 270": {
+   "value": 20.1,
+   "source": "relative-performance"
+  },
+  "Radeon R9 270X": {
+   "value": 21.4,
+   "source": "relative-performance"
+  },
+  "Radeon R9 280": {
+   "value": 25.8,
+   "source": "relative-performance"
+  },
+  "Radeon R9 280X": {
+   "value": 29.6,
+   "source": "relative-performance"
+  },
+  "Radeon R9 285": {
+   "value": 26.3,
+   "source": "relative-performance"
+  },
+  "Radeon R9 290": {
+   "value": 37.1,
+   "source": "relative-performance"
+  },
+  "Radeon R9 290X": {
+   "value": 40.2,
+   "source": "relative-performance"
+  },
+  "Radeon R9 295X2": {
+   "value": 53.3,
+   "source": "relative-performance",
+   "fit": false
+  },
+  "Radeon R9 380": {
+   "value": 26.6,
+   "source": "relative-performance"
+  },
+  "Radeon R9 380X": {
+   "value": 28.5,
+   "source": "relative-performance"
+  },
+  "Radeon R9 390": {
+   "value": 39.6,
+   "source": "relative-performance"
+  },
+  "Radeon R9 390X": {
+   "value": 43.3,
+   "source": "relative-performance"
+  },
+  "Radeon R9 FURY": {
+   "value": 47.5,
+   "source": "relative-performance"
+  },
+  "Radeon R9 FURY X": {
+   "value": 52.1,
+   "source": "relative-performance"
+  },
+  "Radeon R9 Nano": {
+   "value": 51.6,
+   "source": "relative-performance"
+  },
+  "GeForce GT 710": {
+   "value": 2.3,
+   "source": "relative-performance"
+  },
+  "Radeon HD 5670": {
+   "value": 5.2,
+   "source": "relative-performance"
+  }
+ }
+}

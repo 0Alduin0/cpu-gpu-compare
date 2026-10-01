@@ -1,0 +1,15 @@
+# Cekilemeyen CPU'lar — scrape.py tarafindan yazilir.
+#
+# Her satir: isim  # sebep (tarih). Oncelik sirasi popular-cpus.txt ile ayni.
+#
+# Tekrar denemek icin (kaynakta yeniden aranir, hedef sayisi uygulanmaz):
+#   py scripts/dataset/scrape.py --kind cpu --retry
+# Isim kaynakta farkli geciyorsa (orn. TDP varyantlari) popular-cpus.txt
+# icindeki ismi duzeltip scripti normal calistirin; bu dosya kaynak degil,
+# her calismada yeniden yazilan bir rapordur. Cekilen satirlar kendiliginden silinir.
+
+Ryzen 5 9600  # kaynak aramasinda yok (2026-10-01)
+Ryzen 5 5600T  # kaynak aramasinda yok (2026-10-01)
+Ryzen Z2 Extreme  # kaynak aramasinda yok (2026-10-01)
+Ryzen 5 3500  # kaynak aramasinda yok (2026-10-01)
+Celeron N4020  # kaynak aramasinda yok (2026-10-01)

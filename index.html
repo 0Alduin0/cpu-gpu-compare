@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="444 ekran kartı ve 540 işlemciyi yan yana karşılaştır. Teknik özelliklerden hesaplanan, yöntemi açık tahmini performans endeksi." />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0b0d" />
+    <title>CPU ve GPU karşılaştırma · PC Benchmark</title>
+    <script>
+      // Kayıtlı tema tercihi boyamadan önce uygulanır; yoksa cihaz ayarı geçerli.
+      try {
+        var t = localStorage.getItem('pcb.theme')
+        if (t === 'light' || t === 'dark') {
+          document.documentElement.dataset.theme = t
+          // Tarayıcı çubuğu da seçilen temayı izlesin (src/state/theme.js ile aynı renkler).
+          var bar = t === 'dark' ? '#0b0b0d' : '#f7f7f8'
+          document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) { m.setAttribute('content', bar) })
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

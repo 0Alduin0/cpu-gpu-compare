@@ -1,0 +1,38 @@
+# Bağımlılıklar ve derleme çıktısı
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.tsbuildinfo
+
+# Loglar
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ortam değişkenleri
+.env
+.env.*
+!.env.example
+
+# Editör ve işletim sistemi
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Vite SSR ile çalıştırılan geçici kontrol betikleri
+.*.tmp.mjs
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Çekicinin kaynak adresi (yerel ayar, depoya girmez)
+scripts/dataset/kaynak.local.txt

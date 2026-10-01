@@ -1,0 +1,476 @@
+# En cok kullanilan / en bilinen GPU'lar — populerlik sirasina gore.
+#
+# Kurallar:
+#  - Isimler datasetteki (kaynak) adlandirmayla yazilir; mevcut kayitlarla
+#    birebir eslesme bu sayede calisir.
+#  - Yeni eklenecekler icin alt sinir 2006 (GeForce 8 / Radeon HD 2000 ve sonrasi);
+#    oncelik tum zamanlarin en populer ve bilinen parcalari.
+#  - Cekici listeyi yukaridan asagi yurur ve datasette olmayanlari ekler.
+#    Varsayilan olarak listenin tamami cekilir; --target N verilirse toplam
+#    N kayda ulasinca durur (o durumda sondakiler yedek kalir).
+#  - Satir basi # yorumdur.
+
+# --- Kademe 1: oyuncu donanim anketinin tepesi + guncel cok satanlar -------
+GeForce RTX 3060 12 GB
+GeForce RTX 4060 Mobile
+GeForce RTX 4060
+GeForce GTX 1650
+GeForce RTX 3050 8 GB
+GeForce RTX 3060 Ti
+GeForce RTX 3070
+GeForce RTX 4060 Ti 8 GB
+GeForce RTX 3060 Mobile
+GeForce RTX 2060
+GeForce GTX 1060 6 GB
+GeForce RTX 4070
+GeForce RTX 4070 SUPER
+GeForce RTX 3080
+GeForce RTX 3050 Mobile
+GeForce RTX 3050 Ti Mobile
+GeForce RTX 4050 Mobile
+GeForce RTX 5070
+GeForce RTX 5060
+GeForce RTX 5060 Mobile
+GeForce GTX 1660 SUPER
+GeForce RTX 4090
+GeForce RTX 4080 SUPER
+Radeon RX 6600
+GeForce RTX 2070 SUPER
+GeForce GTX 1050 Ti
+GeForce RTX 3070 Mobile
+GeForce RTX 4070 Mobile
+Iris Xe Graphics G7 96EU
+GeForce GTX 1660 Ti
+Radeon RX 580
+GeForce RTX 2060 SUPER
+GeForce RTX 3080 Ti
+GeForce GTX 1070
+GeForce RTX 5070 Ti
+GeForce RTX 3070 Ti
+GeForce RTX 4070 Ti
+Radeon RX 7800 XT
+Radeon RX 6700 XT
+Radeon RX 7600
+GeForce RTX 4070 Ti SUPER
+GeForce RTX 3090
+GeForce RTX 2070
+Radeon RX 6750 XT
+GeForce RTX 5080
+GeForce GTX 1080 Ti
+GeForce GTX 1080
+Radeon RX 9070 XT
+GeForce RTX 2080 Ti
+Radeon RX 7900 XTX
+GeForce GTX 1650 Ti Mobile
+Radeon 780M
+GeForce RTX 5060 Ti 16 GB
+GeForce RTX 4080
+GeForce RTX 5090
+GeForce GTX 1650 Mobile
+Radeon RX 6600 XT
+GeForce RTX 5070 Mobile
+GeForce GTX 1660
+Radeon RX 6800 XT
+Radeon RX 9070
+Radeon RX 9060 XT 16 GB
+Arc B580
+GeForce RTX 2080 SUPER
+GeForce RTX 2080
+Radeon RX 5700 XT
+Radeon RX 7900 XT
+Radeon RX 7700 XT
+Radeon RX 6650 XT
+GeForce RTX 3050 6 GB
+GeForce RTX 5050
+GeForce RTX 5060 Ti 8 GB
+Radeon RX 570
+GeForce GTX 1060 3 GB
+GeForce GTX 1050
+GeForce GTX 1070 Ti
+GeForce RTX 3090 Ti
+Radeon RX 6800
+Radeon RX 6900 XT
+Radeon RX 6950 XT
+Radeon RX 7900 GRE
+Radeon RX 7600 XT
+Radeon RX 6500 XT
+Radeon RX 5600 XT
+Radeon RX 5700
+Radeon RX 5500 XT
+Radeon RX 590
+Radeon RX 6400
+Radeon RX 9060 XT 8 GB
+Arc A770
+GeForce GTX 1650 SUPER
+GeForce GT 1030
+
+# Kaynak: oyuncu donanim anketi (Agustos 2026); adlar kaynak katalogdaki yazimla.
+# 2006-2015 mimarilerinin (Tesla G80/G92, TeraScale, Kepler, GCN 1-3) endeks katsayisi henuz yok.
+
+# --- Kademe 1b: donanim anketinde olup veride olmayanlar (2026-08) ----------
+HD Graphics 520 Mobile
+HD Graphics 620 Mobile
+HD Graphics 4600
+
+# --- Kademe 1c: 2025-2026 cikislari (2026-10-01) ----------------------------
+Radeon RX 9050
+GeForce RTX 5060 GB205
+GeForce RTX 5070 GB203
+GeForce RTX 5070 Mobile 12 GB
+Radeon RX 7700
+Radeon RX 9060 XT LP
+GeForce RTX 5090 D V2
+Arc Pro B70
+Arc Pro B65
+Arc B390
+Arc B370
+Arc G3 Extreme
+Arc G3
+Arc Graphics 4 Xe Mobile
+Arc Graphics 2 Xe Mobile
+Arc Graphics 1 Xe Mobile
+Arc 130T Mobile
+Radeon 820M
+Radeon 8065S
+RTX PRO 5500 Blackwell Workstation
+RTX PRO 5000 72 GB Blackwell Workstation
+RTX PRO 6000 Blackwell Max-Q Workstation
+RTX PRO 4000 Blackwell SFF
+RTX PRO 4500 Blackwell Server
+RTX PRO 6000 Blackwell Server
+RTX Spark N1X 6144-core
+RTX Spark N1X 5120-core
+Radeon AI PRO R9700S
+Radeon PRO W7400
+
+# --- Kademe 1d: tum zamanlarin bilinen kartlari (2006-2016 klasikleri dahil) --
+GeForce 8800 GT
+GeForce 8800 GTX
+GeForce 8800 GTS 512
+GeForce 9800 GT
+GeForce 9800 GTX+
+GeForce GTX 260
+GeForce GTX 275
+GeForce GTX 280
+GeForce GTX 285
+GeForce GTX 295
+GeForce GTS 450
+GeForce GTX 460
+GeForce GTX 470
+GeForce GTX 480
+GeForce GTX 560 Ti
+GeForce GTX 570
+GeForce GTX 580
+GeForce GTX 590
+GeForce GTX 650
+GeForce GTX 650 Ti
+GeForce GTX 650 Ti Boost
+GeForce GTX 660
+GeForce GTX 660 Ti
+GeForce GTX 670
+GeForce GTX 680
+GeForce GTX 690
+GeForce GTX 750
+GeForce GTX 760
+GeForce GTX 770
+GeForce GTX 780
+GeForce GTX 780 Ti
+GeForce GTX TITAN
+GeForce GTX TITAN BLACK
+GeForce GTX 950
+GeForce GTX TITAN X
+GeForce GT 710
+Radeon HD 4850
+Radeon HD 4870
+Radeon HD 5670
+Radeon HD 5750
+Radeon HD 5770
+Radeon HD 5850
+Radeon HD 5870
+Radeon HD 5970
+Radeon HD 6670
+Radeon HD 6750
+Radeon HD 6770
+Radeon HD 6850
+Radeon HD 6870
+Radeon HD 6950
+Radeon HD 6970
+Radeon HD 6990
+Radeon HD 7750
+Radeon HD 7770 GHz Edition
+Radeon HD 7790
+Radeon HD 7850
+Radeon HD 7870 GHz Edition
+Radeon HD 7950
+Radeon HD 7970
+Radeon HD 7970 GHz Edition
+Radeon HD 7990
+Radeon R7 250
+Radeon R7 260X
+Radeon R7 370
+Radeon R9 270
+Radeon R9 270X
+Radeon R9 280
+Radeon R9 280X
+Radeon R9 285
+Radeon R9 290
+Radeon R9 290X
+Radeon R9 295X2
+Radeon R9 380
+Radeon R9 380X
+Radeon R9 390
+Radeon R9 390X
+Radeon R9 FURY
+Radeon R9 FURY X
+Radeon R9 Nano
+Radeon Vega 11
+HD Graphics 4000
+HD Graphics 530
+HD Graphics 630
+
+# --- Kademe 2: yaygin dizustu GPU'lari ---------------------------------------
+GeForce RTX 5070 Ti Mobile
+GeForce RTX 5080 Mobile
+GeForce RTX 4080 Mobile
+GeForce RTX 4090 Mobile
+GeForce RTX 5090 Mobile
+GeForce RTX 5050 Mobile
+GeForce RTX 3070 Ti Mobile
+GeForce RTX 3080 Mobile
+GeForce RTX 3080 Ti Mobile
+GeForce RTX 2050 Mobile
+GeForce RTX 2060 Mobile
+GeForce RTX 2070 Mobile
+GeForce RTX 2080 Mobile
+GeForce RTX 2070 SUPER Mobile
+GeForce RTX 2080 SUPER Mobile
+GeForce GTX 1660 Ti Mobile
+GeForce GTX 1050 Mobile
+GeForce GTX 1050 Ti Mobile
+GeForce GTX 1060 Mobile
+GeForce GTX 1070 Mobile
+GeForce GTX 1080 Mobile
+GeForce MX450 30.5W 10Gbps  # GDDR6'li tam guc surumu; 12W ve 30.5W 8Gbps alinmadi
+GeForce MX550
+GeForce MX350
+GeForce MX250
+GeForce MX150
+GeForce MX330
+GeForce MX570
+GeForce MX230
+GeForce MX130
+
+# --- Kademe 3: tumlesik GPU'lar (anketlerde "AMD Radeon Graphics" / "Intel Iris Xe") --
+Radeon 680M
+Radeon 760M
+Radeon 660M
+Radeon 890M
+Radeon 880M
+Radeon 740M
+Radeon 610M
+Radeon 860M
+Radeon 840M
+Radeon 8060S
+Radeon 8050S
+Radeon 8040S
+Radeon Vega 8
+Radeon Vega 6
+Radeon Vega 3
+Radeon RX Vega 11
+Radeon RX Vega 10
+Iris Xe Graphics G7 80EU
+Iris Xe Graphics G4 48EU
+Iris Plus Graphics G7 64EU
+Arc 140V
+Arc 130V
+Arc 140T
+Arc Graphics 128EU
+UHD Graphics 620
+UHD Graphics 630
+UHD Graphics 770
+UHD Graphics 730
+UHD Graphics 750
+UHD Graphics 610
+UHD Graphics 600
+UHD Graphics 605
+
+# --- Kademe 4: kalan masaustu kartlari (2016+) -----------------------------
+GeForce RTX 4060 Ti 16 GB
+GeForce RTX 3060 8 GB
+GeForce RTX 3080 12 GB
+GeForce RTX 2060 12 GB
+GeForce GTX 1650 GDDR6
+GeForce RTX 3060 Ti GDDR6X
+GeForce GTX 1050 3 GB
+GeForce GTX 1630
+GeForce RTX 4090 D
+GeForce RTX 5090 D
+TITAN RTX
+TITAN V
+TITAN Xp
+TITAN X Pascal
+Radeon RX 9070 GRE
+Radeon RX 9060
+Radeon RX 6700
+Radeon RX 6750 GRE 12 GB
+Radeon RX 6750 GRE 10 GB
+Radeon RX 7650 GRE
+Radeon RX 5500 OEM
+Radeon RX 460
+Radeon RX 560
+Radeon RX 550
+Radeon RX 470
+Radeon RX 480
+Radeon RX Vega 56
+Radeon RX Vega 64
+Radeon VII
+Arc A750
+Arc B570
+Arc A380
+Arc A580
+Arc A310
+
+# --- Kademe 5: AMD ve Intel dizustu kartlari -------------------------------
+Radeon RX 6600M
+Radeon RX 6700M
+Radeon RX 6800M
+Radeon RX 6650M
+Radeon RX 6500M
+Radeon RX 6550M
+Radeon RX 6850M XT
+Radeon RX 7600M
+Radeon RX 7600M XT
+Radeon RX 7700S
+Radeon RX 7800M
+Radeon RX 7900M
+Radeon RX 5500M
+Radeon RX 5600M
+Arc A370M
+Arc A350M
+Arc A730M
+Arc A770M
+Arc A550M
+
+# --- Kademe 6: Max-Q varyantlari (2017-2020 ince dizustuleri) ---------------
+GeForce RTX 2060 Max-Q
+GeForce RTX 2070 Max-Q
+GeForce RTX 2080 Max-Q
+GeForce RTX 2070 SUPER Max-Q
+GeForce RTX 2080 SUPER Max-Q
+GeForce GTX 1650 Max-Q
+GeForce GTX 1660 Ti Max-Q
+GeForce GTX 1060 Max-Q
+GeForce GTX 1070 Max-Q
+GeForce GTX 1080 Max-Q
+GeForce GTX 1050 Max-Q
+GeForce GTX 1050 Ti Max-Q
+GeForce RTX 3060 Max-Q
+GeForce RTX 3070 Max-Q
+GeForce RTX 3080 Max-Q
+
+# --- Kademe 6b: kalan dizustu ve masaustu varyantlari ----------------------
+GeForce RTX 3050 Mobile Refresh 6 GB
+GeForce RTX 3050 A Mobile
+GeForce MX110
+GeForce GTX 1060 5 GB
+GeForce GT 1030 DDR4
+GeForce RTX 3050 OEM
+Radeon RX 6600S
+Radeon RX 6700S
+Radeon RX 6800S
+Radeon RX 7600S
+Radeon RX 6300M
+Radeon RX 5300M
+Radeon RX 560X Mobile
+Radeon RX 580X
+Radeon RX 570X
+Radeon RX 5300 OEM
+Radeon RX 6300 OEM
+
+# --- Kademe 7: is istasyonu ------------------------------------------------
+RTX A2000
+RTX A2000 12 GB
+RTX A4000
+RTX A4500
+RTX A5000
+RTX A6000
+RTX 2000 Ada Generation
+RTX 4000 SFF Ada Generation
+RTX 4000 Ada Generation
+RTX 4500 Ada Generation
+RTX 5000 Ada Generation
+RTX 6000 Ada Generation
+RTX PRO 6000 Blackwell Workstation
+RTX PRO 5000 Blackwell Workstation
+RTX PRO 4000 Blackwell Workstation
+Quadro RTX 4000
+Quadro RTX 5000
+Quadro RTX 6000
+Quadro RTX 8000
+Quadro P620
+Quadro P1000
+Quadro P2000
+Quadro P4000
+Radeon PRO W7900
+Radeon PRO W7800
+Radeon PRO W7600
+Radeon Pro W6800
+Radeon Pro W6600
+Radeon AI PRO R9700
+Arc Pro B50
+Arc Pro B60
+RTX A400
+RTX A1000
+RTX A5500
+RTX PRO 2000 Blackwell Workstation
+RTX PRO 4500 Blackwell Workstation
+Quadro P400
+Quadro P600
+Quadro P5000
+T400 4 GB
+T600
+T1000
+T1000 8 GB
+Radeon Pro WX 3100
+Radeon Pro WX 5100
+Radeon Pro WX 7100
+Radeon Pro WX 9100
+Radeon Pro W5700
+Radeon Pro W6400
+Radeon PRO W7500
+Radeon PRO W7700
+Radeon Pro VII
+
+# --- Kademe 8: is istasyonu dizustu (yedek) --------------------------------
+RTX A1000 Mobile
+RTX A2000 Mobile
+RTX A3000 Mobile
+RTX A5000 Mobile
+RTX 2000 Mobile Ada Generation
+RTX 3500 Mobile Ada Generation
+RTX 5000 Mobile Ada Generation
+Quadro T1000 Mobile
+Quadro T2000 Mobile
+
+# --- Kademe 9: veri merkezi / yapay zeka (yedek) ---------------------------
+Tesla T4
+A100 PCIe 40 GB
+A100 SXM4 80 GB
+H100 PCIe 80 GB
+H100 SXM5 80 GB
+H200 NVL
+L4
+L40S
+A10 PCIe
+Tesla V100 PCIe 16 GB
+Tesla P100 PCIe 16 GB
+Tesla P40
+B200 SXM6
+Instinct MI300X
+
+# --- Kademe 10: konsol / el konsolu GPU'lari (yedek) -----------------------
+Playstation 5 GPU
+Xbox Series X GPU
+Xbox Series S GPU
+Steam Deck GPU
+Playstation 5 Pro GPU

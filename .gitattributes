@@ -1,0 +1,9 @@
+# Kaynak dosyalar LF; sistemdeki core.autocrlf=true checkout'ta CRLF'ye çevirmesin.
+* text=auto eol=lf
+
+# Veri dosyalarını scrape.py CRLF yazıyor; çalışma kopyası aynı kalsın.
+data/*.json text eol=crlf
+
+*.png binary
+*.jpg binary
+*.svg text eol=lf

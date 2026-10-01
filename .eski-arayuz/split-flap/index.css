@@ -1,0 +1,546 @@
+@import "tailwindcss";
+
+/*
+ * Kalkış panosu dünyası.
+ * Zemin fırçalanmış çelik, veri mat siyah flap hücrelerinde, harf beyaz boya.
+ * Kehribar = seçili / birincil eylem / en iyi. Sinyal kırmızısı = en düşük / hata.
+ */
+@theme {
+  --font-board: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Barlow Semi Condensed", "Arial Narrow", sans-serif;
+
+  --color-steel-950: #121416;
+  --color-steel-900: #181b1e;
+  --color-steel-850: #1e2124;
+  --color-steel-800: #25292d;
+  --color-steel-700: #343a40;
+  --color-steel-600: #4a5057;
+  --color-steel-400: #989fa6;
+  --color-steel-300: #aab0b6;
+  --color-steel-200: #c9cdd1;
+
+  --color-flap: #0c0d0f;
+  --color-flap-top: #141518;
+  --color-flap-edge: #2b2f34;
+
+  --color-paint: #edece7;
+  --color-paint-dim: #a9aba6;
+  --color-amber: #ffb000;
+  --color-amber-hot: #ffc233;
+  --color-amber-ink: #1a1200;
+  --color-signal: #ff5a4e;
+
+  /* Çelik tonları: doku bunların üstüne overlay ile biner. */
+  --color-steel-field: #303336;
+  --color-steel-bezel: #56595e;
+
+  --text-label: 0.75rem;
+  --text-label--line-height: 1rem;
+}
+
+:root {
+  color-scheme: dark;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  background: var(--color-steel-950);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--color-paint);
+  /* Fırçalanmış çelik zemin: public/steel.png (scripts/make-steel.mjs) tabana overlay. */
+  background-color: var(--color-steel-field);
+  background-image: url("/steel.png");
+  background-size: 256px 256px;
+  background-blend-mode: overlay;
+  font-kerning: normal;
+}
+
+::selection {
+  background: var(--color-amber);
+  color: var(--color-amber-ink);
+}
+
+input,
+select,
+textarea {
+  caret-color: var(--color-amber);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}
+
+* {
+  scrollbar-color: var(--color-steel-600) var(--color-steel-900);
+  scrollbar-width: thin;
+}
+
+a {
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+@layer components {
+  /* ── Pano başlık/etiket dili ─────────────────────────────── */
+  .board-label {
+    font-family: var(--font-board);
+    font-weight: 600;
+    font-size: var(--text-label);
+    line-height: 1rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-steel-300);
+  }
+
+  .board-title {
+    font-family: var(--font-board);
+    font-weight: 600;
+    font-size: 1.0625rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-paint);
+  }
+
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ── Pano: açık çelik çerçeve (bezel) içinde gömülü siyah yüz ─── */
+  .board {
+    /* Grid/flex çocuğu olarak içerik genişliğine göre büyümesin; içindeki
+       mutlak konumlu (sr-only) öğeler panonun dışına taşıp sayfayı genişletmesin. */
+    position: relative;
+    min-width: 0;
+    border: 7px solid transparent;
+    border-radius: 4px;
+    /* 1. katman: yüz (yalnızca iç alan) · 2. katman: çelik doku (çerçeve dahil) */
+    background:
+      linear-gradient(var(--color-steel-950), var(--color-steel-950)) padding-box,
+      url("/steel.png") 0 0 / 256px 256px border-box;
+    background-color: var(--color-steel-bezel);
+    background-blend-mode: normal, overlay;
+    box-shadow:
+      inset 0 0 0 1px #050506,
+      inset 0 2px 3px rgb(0 0 0 / 0.55),
+      0 0 0 1px rgb(0 0 0 / 0.6),
+      0 1px 0 1px rgb(255 255 255 / 0.05);
+  }
+
+  /* Çelik şerit: başlık, alt bilgi, sabit çubuklar. */
+  .steel-strip {
+    background-color: var(--color-steel-field);
+    background-image: url("/steel.png");
+    background-size: 256px 256px;
+    background-blend-mode: overlay;
+  }
+
+  .board-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-steel-800);
+  }
+
+  /* ── Flap hücresi: tek karakter ──────────────────────────── */
+  .flap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.78em;
+    height: 1.12em;
+    margin-right: 0.08em;
+    border-radius: 0.07em;
+    /* Üst yaprak bir ton açık: iki yaprağın birleşimi, süs değil yapı. */
+    background: linear-gradient(to bottom, var(--color-flap-top) 0 50%, var(--color-flap) 50% 100%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05), inset 0 -1px 0 rgb(0 0 0 / 0.6);
+    color: var(--color-paint);
+    font-family: var(--font-board);
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    perspective: 400px;
+    overflow: hidden;
+  }
+
+  .flap:last-child {
+    margin-right: 0;
+  }
+
+  /* Sıkı hücre: tablo satırları ve uzun adlar; okunurluk için dar aralık. */
+  .flap-compact .flap {
+    width: 0.6em;
+    margin-right: 0.035em;
+    border-radius: 0.05em;
+  }
+
+  /* Menteşe çizgisi (her hücrede) ve yan pimler (yalnızca büyük göstergede) */
+  .flap::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 50%;
+    height: max(1px, 0.035em);
+    transform: translateY(-50%);
+    background: #000;
+    /* Alt yaprağın üst kenarına düşen gölge: menteşe boşluğu. */
+    box-shadow: 0 max(1px, 0.03em) max(1px, 0.05em) rgb(0 0 0 / 0.7);
+    z-index: 2;
+  }
+
+  .flap-pins .flap::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 50%;
+    height: 0.16em;
+    transform: translateY(-50%);
+    background:
+      linear-gradient(var(--color-steel-600), var(--color-steel-600)) left / 0.06em 100% no-repeat,
+      linear-gradient(var(--color-steel-600), var(--color-steel-600)) right / 0.06em 100% no-repeat;
+    z-index: 3;
+  }
+
+  .flap-glyph {
+    display: block;
+    transform-origin: 50% 50%;
+    backface-visibility: hidden;
+  }
+
+  .flap-glyph[data-tick] {
+    animation: flap-fold 90ms var(--ease-out);
+  }
+
+  .flap-blank {
+    color: transparent;
+  }
+
+  /* ── Flap şeridi: tablo hücresinde tek parça pano ────────── */
+  .strip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 2.25rem;
+    padding: 0.35rem 0.625rem;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, var(--color-flap-top) 0 50%, var(--color-flap) 50% 100%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04), inset 0 -1px 0 rgb(0 0 0 / 0.55);
+    font-family: var(--font-board);
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    color: var(--color-paint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .strip::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 50%;
+    height: 1px;
+    background: rgb(0 0 0 / 0.8);
+    pointer-events: none;
+  }
+
+  .strip[data-flip] {
+    animation: strip-fold 260ms var(--ease-out) both;
+    animation-delay: var(--flip-delay, 0ms);
+  }
+
+  /* Tasarlanmış boş hücre: veri yok = dönmemiş, boş flap. */
+  .strip-empty {
+    display: block;
+    width: 100%;
+    min-height: 1.2em;
+  }
+
+  /* Dar ekranda pano tabloları: daha sıkı hücre, daha küçük harf. */
+  @media (max-width: 639px) {
+    .board-table {
+      border-spacing: 2px 3px;
+    }
+
+    .board-table .strip {
+      font-size: 0.9375rem;
+      padding-inline: 0.5rem;
+    }
+
+    .board-table th {
+      padding-inline: 0.375rem;
+    }
+  }
+
+  /* ── Kehribar lamba ─────────────────────────────────────── */
+  .lamp {
+    display: inline-block;
+    flex: none;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 999px;
+    background: var(--color-amber);
+    box-shadow: 0 0 0 2px rgb(255 176 0 / 0.18);
+  }
+
+  .lamp-off {
+    background: var(--color-steel-700);
+    box-shadow: none;
+  }
+
+  /* ── Düğmeler: çelik tuş ve kehribar tuş ─────────────────── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0 1.125rem;
+    border-radius: 3px;
+    font-family: var(--font-board);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      background-color 160ms var(--ease-out),
+      border-color 160ms var(--ease-out),
+      color 160ms var(--ease-out),
+      transform 120ms var(--ease-out);
+  }
+
+  .btn:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+  }
+
+  .btn-amber {
+    background: var(--color-amber);
+    color: var(--color-amber-ink);
+    border: 1px solid var(--color-amber-hot);
+  }
+
+  .btn-amber:hover:not(:disabled) {
+    background: var(--color-amber-hot);
+  }
+
+  .btn-steel {
+    background: var(--color-steel-850);
+    color: var(--color-paint);
+    border: 1px solid var(--color-steel-600);
+  }
+
+  .btn-steel:hover:not(:disabled) {
+    background: var(--color-steel-800);
+    border-color: var(--color-steel-400);
+  }
+
+  .btn-quiet {
+    min-height: 2.25rem;
+    padding: 0 0.625rem;
+    background: transparent;
+    color: var(--color-steel-300);
+    border: 1px solid transparent;
+  }
+
+  .btn-quiet:hover:not(:disabled) {
+    color: var(--color-paint);
+    border-color: var(--color-steel-700);
+  }
+
+  /* ── Form alanları ──────────────────────────────────────── */
+  .field {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0 0.875rem;
+    border-radius: 3px;
+    background: var(--color-flap);
+    border: 1px solid var(--color-steel-700);
+    color: var(--color-paint);
+    font-family: var(--font-board);
+    font-weight: 500;
+    font-size: 1.0625rem;
+    letter-spacing: 0.06em;
+    transition: border-color 160ms var(--ease-out);
+  }
+
+  .field::placeholder {
+    color: var(--color-steel-400);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+  }
+
+  .field:hover {
+    border-color: var(--color-steel-600);
+  }
+
+  .field:focus {
+    outline: none;
+    border-color: var(--color-amber);
+  }
+
+  select.field {
+    appearance: none;
+    padding-right: 2.25rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23aab0b6' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.625rem center;
+    background-size: 1.125rem;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+
+  select.field option {
+    background: var(--color-steel-900);
+    color: var(--color-paint);
+    text-transform: none;
+  }
+
+  /* ── Segment anahtarı (sıralama ekseni vb.) ─────────────── */
+  .segmented {
+    display: inline-flex;
+    gap: 2px;
+    padding: 2px;
+    border-radius: 3px;
+    background: var(--color-flap);
+    border: 1px solid var(--color-steel-700);
+  }
+
+  .segmented button {
+    min-height: 2.25rem;
+    padding: 0 0.875rem;
+    border-radius: 2px;
+    font-family: var(--font-board);
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-steel-300);
+    cursor: pointer;
+    transition:
+      background-color 160ms var(--ease-out),
+      color 160ms var(--ease-out);
+  }
+
+  .segmented button:hover {
+    color: var(--color-paint);
+  }
+
+  .segmented button[aria-pressed="true"] {
+    background: var(--color-amber);
+    color: var(--color-amber-ink);
+  }
+
+  /* ── Pano tablosu ───────────────────────────────────────── */
+  .board-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px 4px;
+  }
+
+  .board-table th {
+    padding: 0.25rem 0.625rem 0.375rem;
+    text-align: left;
+    font-family: var(--font-board);
+    font-weight: 600;
+    font-size: var(--text-label);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-steel-300);
+    white-space: nowrap;
+  }
+
+  .board-table td {
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .sort-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .sort-btn:hover,
+  .sort-btn[data-active] {
+    color: var(--color-paint);
+  }
+
+  .sort-btn[data-active] {
+    color: var(--color-amber);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+@keyframes flap-fold {
+  from {
+    transform: rotateX(-88deg);
+    filter: brightness(1.6);
+  }
+  to {
+    transform: rotateX(0);
+    filter: none;
+  }
+}
+
+@keyframes strip-fold {
+  0% {
+    transform: perspective(500px) rotateX(-70deg);
+    filter: brightness(1.5);
+    opacity: 0.2;
+  }
+  100% {
+    transform: none;
+    filter: none;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flap-glyph[data-tick],
+  .strip[data-flip] {
+    animation: none;
+  }
+
+  .btn {
+    transition: none;
+  }
+}
