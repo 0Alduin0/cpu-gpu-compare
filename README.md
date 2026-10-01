@@ -45,7 +45,7 @@ npm run preview    # derlemeyi yerelde sun
 npm run lint
 ```
 
-Site tamamen statiktir (backend yok). `dist/` herhangi bir statik barındırmaya konabilir. Uygulama istemci tarafı yönlendirme kullandığı için sunucunun bilinmeyen yolları `index.html`'e yönlendirmesi gerekir.
+Site tamamen statiktir (backend yok). Vercel'de içe aktarınca Vite otomatik tanınır (derleme `npm run build`, çıktı `dist`); `vercel.json` istemci tarafı yönlendirme için bilinmeyen yolları `index.html`'e yönlendirir ve derlenmiş varlıkları uzun süreli önbelleğe alır. Başka bir statik barındırmada da aynı yönlendirme gerekir.
 
 ### Diğer komutlar
 
